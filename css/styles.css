@@ -71,7 +71,7 @@ body{
 }
 
 .hero{
-    margin-top: 130px;
+    padding-top: 130px;
     background-color: #fff;
 }
 
@@ -107,13 +107,22 @@ body{
 }
 
 .housing{
-    background-color: #F5F5F5;
+    
 }
 
 .housing-list{
     display: flex;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.housing-item:not(:last-child){
+    margin-right: 113px;
 }
 
 .housing-amount{
     display: block;
+    
+    font-size: 96px;
 }
