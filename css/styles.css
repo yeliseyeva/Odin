@@ -2,6 +2,11 @@ body{
     background-color: #F5F5F5;
 }
 
+.second-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -107,7 +112,7 @@ body{
 }
 
 .housing{
-    
+    padding-bottom: 122px;
 }
 
 .housing-list{
@@ -125,4 +130,46 @@ body{
     display: block;
     
     font-size: 96px;
+}
+
+.projects-list{
+    padding-bottom: 48px;
+}
+
+.project-item{
+    width: 384.33;
+    margin-top: 31px;
+}
+
+.projects-img{
+    width: 384.33px;
+    height: 319.79px;
+    border-radius: 3%;
+}
+
+.project-name{
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: 400;
+    width: 384.33px;
+    text-align: center;
+
+}
+
+.project-date{
+    font-size: 16px;
+    font-weight: 400;
+    width: 384.33px;
+    text-align: center;
+}
+
+.projects-button{
+    display: block;
+    margin: auto;
+    width: 272px;
+    height: 52px;
+
+    border: 2px solid #087313;
+    border-radius: 60px;
+    background-color: #F5F5F5;
 }
