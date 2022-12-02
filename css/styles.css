@@ -44,10 +44,12 @@ body{
 
 .header-conteiner{
     display: flex;
+    height: 100%;
 }
 
 .logo-link{
-    margin-top: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
 }
 .logo-img{
@@ -65,8 +67,8 @@ body{
 }
 
 .nav-item{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -101,6 +103,7 @@ body{
 }
 
 .contents-text{
+    margin-top: 19px;
     width: 764px;
     font-size: 14px;
     font-weight: 400;
@@ -138,21 +141,22 @@ body{
 }
 
 .project-item{
-    width: 384.33;
+    width: 384.33px;
     margin-top: 31px;
 }
 
 .projects-img{
-    width: 384.33px;
-    height: 319.79px;
+    /* width: 384.33px; */
+    /* height: 319.79px; */
     border-radius: 3%;
 }
 
-.project-name{
+.project-title{
+    margin-top: 4px;
     font-size: 20px;
     margin-bottom: 3px;
     font-weight: 400;
-    width: 384.33px;
+    /* width: 384.33px; */
     text-align: center;
 
 }
@@ -164,7 +168,7 @@ body{
     text-align: center;
 }
 
-.projects-button{
+.main-button{
     display: block;
     margin: auto;
     width: 272px;
@@ -173,4 +177,91 @@ body{
     border: 2px solid #087313;
     border-radius: 60px;
     background-color: #F5F5F5;
+
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.news-conteiner{
+    padding-bottom: 119.5px;
+
+    border-bottom: 1px solid #000000;
+}
+
+.news-list{
+    padding-top: 41px;
+    padding-bottom: 48px;
+
+}
+
+.news-item{
+    width: 384.33px;
+}
+
+.news-date{
+    margin-top: 16px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news-title{
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.news-text{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.footer-conteiner{
+    padding-top: 21.5px;
+    padding-bottom: 114px;
+}
+
+.contacts-list{
+    margin-top: 52px;
+    padding-bottom: 33px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contakts-item{
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contacts-kind{
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contacts-link{
+    border-bottom: 1px solid #007825;
+}
+
+.copyright{
+    display: flex;
+    padding-top: 19px;
+}
+
+.copyright-paragraph{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.social-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.social-item:not(:last-child){
+    margin-right: 24px;
 }
