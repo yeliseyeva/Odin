@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #faeee5;
 }
 
 .second-title {
@@ -23,4 +23,9 @@ body {
 
 .accent-border {
   border-bottom: 2px solid #007825;
+}
+
+.switch-border {
+  border: 2px solid #000000;
+  border-radius: 60px;
 }/*# sourceMappingURL=body.css.map */
