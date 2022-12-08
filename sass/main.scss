@@ -1,0 +1,23 @@
+// base
+@import "./base.scss";
+@import "./body.scss";
+@import "./conteiner.scss";
+@import "./mainButton.scss";
+
+// header-footer
+@import "./header/header.scss";
+@import "./footer/footer.scss";
+@import "./footer/copyright.scss";
+
+//  main-page
+@import "./mainPage/hero/hero.scss";
+@import "./mainPage/hero/housing.scss";
+@import "./mainPage/projects/projects.scss";
+@import "./mainPage/news/news.scss";
+
+// news-page
+@import "./newsPage/buttonList.scss";
+@import "./newsPage/newsConteiner.scss";
+
+// projects-page
+@import "./projectsPage/projectsConteiner.scss"

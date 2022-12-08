@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  padding-top: 19px;
+}
+
+.copyright-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.social-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 24px;
+}/*# sourceMappingURL=copyright.css.map */

@@ -1,0 +1,27 @@
+.footer-conteiner {
+  padding-top: 21.5px;
+  padding-bottom: 114px;
+  border-top: 1px solid #000000;
+}
+
+.contacts-list {
+  margin-top: 52px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contakts-item {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts-kind {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contacts-link {
+  border-bottom: 1px solid #007825;
+}/*# sourceMappingURL=footer.css.map */
