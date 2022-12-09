@@ -37,5 +37,15 @@
 <path d="M24.4 12.26c0-6.762-5.385-12.26-11.998-12.26s-12.002 5.499-12.002 12.26c0 6.762 10.963 18.956 11.432 19.481 0.144 0.168 0.349 0.258 0.566 0.258s0.421-0.094 0.57-0.258c0.466-0.525 11.432-12.916 11.432-19.481zM1.937 12.26c0-5.892 4.695-10.686 10.461-10.686s10.461 4.798 10.461 10.69c0 5.167-8.202 15.122-10.461 17.767-2.259-2.645-10.461-12.605-10.461-17.767v-0.004z"></path>
 <path d="M12.398 5.925c-3.294 0-5.979 2.739-5.979 6.11s2.68 6.11 5.979 6.11c3.294 0 5.979-2.739 5.979-6.11s-2.68-6.11-5.979-6.11zM12.398 16.57c-2.448 0-4.438-2.034-4.438-4.539s1.99-4.539 4.438-4.539c2.448 0 4.442 2.034 4.442 4.539s-1.99 4.539-4.442 4.539z"></path>
 </symbol>
+<symbol id="left" viewBox="0 0 21 32">
+<path fill="#007b25" style="fill: var(--color1, #007b25)" d="M5.356 16l15.978 13.446-2.182 2.554-19.152-16 19.152-16 2.182 2.554-15.978 13.446z"></path>
+</symbol>
+<symbol id="right" viewBox="0 0 21 32">
+<path fill="#007b25" style="fill: var(--color1, #007b25)" d="M15.978 16l-15.978-13.446 2.182-2.554 19.152 16-19.152 16-2.182-2.554 15.978-13.446z"></path>
+</symbol>
+<symbol id="close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7429" d="M1.773 31.030l29.092-29.092"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7429" d="M1.884 1.773l29.092 29.092"></path>
+</symbol>
 </defs>
 </svg>

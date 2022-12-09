@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
@@ -24,7 +28,7 @@
             <a href="./news.html">Nyheter</a>
           </li>
           <li class="nav-item">
-            <a href="">Kontakt</a>
+            <a href="./contacts.html">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -33,7 +37,39 @@
     <div class="options-conteiner">
       <div class="conteiner">
         <div class="carousel">
-          
+          <div class="wrapper">
+            <input checked type="radio" name="slider" id="slide1" />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <input type="radio" name="slider" id="slide5" />
+
+            <div class="slider-wrapper">
+              <div class="inner">
+                <article>
+                  <img src="./img/carouselPhoto1.png" />
+                </article>
+
+                <article>
+                  <img src="./img/carouselPhoto1.png" />
+                </article>
+                <article>
+                  <img src="./img/carouselPhoto1.png" />
+                </article>
+              </div>
+              <!-- .inner -->
+            </div>
+            <!-- .slider-wrapper -->
+
+            <div class="slider-prev-next-control">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+              <label for="slide5"></label>
+            </div>
+            <!-- .slider-prev-next-control -->
+          </div>
         </div>
         <h1 class="main-title">Tollskogvegen II – Porsgrunn</h1>
         <div class="options">
@@ -173,6 +209,45 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="backdrop is-hidden">
+      <button class="close"><svg class="close-svg" width="21" height="33">
+        <use href="./svg/symbol-defs.svg#close"></use></svg
+    ></button>
+      <div class="carousel conteiner"><div class="wrapper">
+        <input checked type="radio" name="slider" id="slide1" />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+
+        <div class="slider-wrapper">
+          <div class="inner">
+            <article>
+              <img src="./img/carouselPhoto1.png" />
+            </article>
+
+            <article>
+              <img src="./img/carouselPhoto1.png" />
+            </article>
+            <article>
+              <img src="./img/carouselPhoto1.png" />
+            </article>
+          </div>
+          <!-- .inner -->
+        </div>
+        <!-- .slider-wrapper -->
+
+        <div class="slider-prev-next-control">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+          <label for="slide5"></label>
+        </div>
+        <!-- .slider-prev-next-control -->
+      </div></div>
     </div>
 
     <footer class="footer-conteiner conteiner">
