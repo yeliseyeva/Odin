@@ -1,3 +1,30 @@
+.contacts-conteiner{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(3);
+}
+
+.contacts{
+    grid-area: 1/1/2/2;
+}
+
+.persons-list{
+    display: flex;
+    grid-area: 1/2/2/3;
+
+}
 .persons-item{
     width: 270px;
 }
+
+.contacts-form{
+     grid-area: 2/2/3/3;
+ }
+
+ .partners{
+grid-area: 3/1/4/3;
+ }
+ .partners-list{
+    display: flex;
+ }

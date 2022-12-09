@@ -33,7 +33,7 @@
     <div class="page-title">
       <h1 class="main-title conteiner">Kontakt</h1>
     </div>
-    <div class="conteiner">
+    <div class="conteiner contacts-conteiner">
       <div class="contacts">
         <ul class="list">
           <li class="contakts-item">
@@ -81,6 +81,62 @@
                 <a href="" class="accent-border">Kristoffer@odin-eiendom.no</a>
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-form">
+        <form action="" class="form">
+          <h3>Kontaktskjema</h3>
+          <div class="formfield">
+            <label for="name">Navn</label>
+            <input type="text" name="name" id="name" autofocus />
+          </div>
+          <div class="formfield">
+            <label for="email">Epost</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="formfield">
+            <label for="tel">Mobil</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="formfield">
+            <label for="message">Melding</label>
+            <textarea name="message" id="message" rows="10"></textarea>
+          </div>
+
+          <div class="formfield">
+            <input
+              type="checkbox"
+              name="consent"
+              value="consent"
+              id="consent"
+            />
+            <label for="consent">Consent</label>
+          </div>
+
+          <button class="description-button">
+            Send melding
+            <svg class="arrow-svg" width="26" height="19">
+              <use href="./svg/symbol-defs.svg#arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="partners">
+        <h3>Våre Samarbeidspartnere</h3>
+        <ul class="partners-list">
+          <li class="partner-item">
+            <img src="./img/partner1.png" alt="wexels" />
+          </li>
+          <li class="partner-item">
+            <img src="./img/partner2.png" alt="maxbo" />
+          </li>
+          <li class="partner-item">
+            <img src="./img/partner3.png" alt="pbbl" />
+          </li>
+          <li class="partner-item">
+            <img src="./img/partner4.png" alt="asplan viak" />
           </li>
         </ul>
       </div>
