@@ -858,6 +858,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  align-items: center;
+  padding-bottom: 131px;
 }
 
 .about__benefits-item {
@@ -868,8 +870,6 @@ body {
 .about__benefits-item svg {
   display: block;
   margin-bottom: 31px;
-}
-
-.about__benefits-item b {
-  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -25,6 +25,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  align-items: center;
+  padding-bottom: 131px;
 }
 
 .about__benefits-item {
@@ -35,4 +37,6 @@
 .about__benefits-item svg {
   display: block;
   margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=about.css.map */
