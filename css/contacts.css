@@ -1,5 +1,6 @@
 .contacts-conteiner {
   padding-top: 82px;
+  padding-bottom: 82px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -60,6 +61,11 @@
   padding-top: 82px;
   grid-area: 3/1/4/3;
   text-align: center;
+}
+
+.partners > h3 {
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .partners__list {
