@@ -35,8 +35,8 @@
     </div>
     <div class="conteiner contacts-conteiner">
       <div class="contacts">
-        <ul class="list">
-          <li class="contakts-item">
+        <ul class="list contacts__list">
+          <li class="contacts__list-item">
             <p class="contacts-kind">Addrese</p>
             <address>
               <p>Odin Eiendom</p>
@@ -45,16 +45,16 @@
               <a href="" class="contacts-link">Kart</a>
             </address>
           </li>
-          <li class="contakts-item">
-            <p class="contacts-kind">Telefon</p>
-            <p>Ma - fre 10-16</p>
-            <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
-          </li>
-          <li class="contakts-item">
+          <li class="contacts__list-item">
             <p class="contacts-kind">Mail</p>
             <a href="malito:kontakt@odinedom.no" class="contacts-link"
               >kontakt@odinedom.no</a
             >
+          </li>
+          <li class="contacts__list-item">
+            <p class="contacts-kind">Telefon</p>
+            <p>Ma - fre 10-16</p>
+            <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
           </li>
         </ul>
       </div>
@@ -62,10 +62,12 @@
         <ul class="persons-list">
           <li class="persons-item">
             <img src="./img/person1.png" alt="man" />
-            <p>Kristoffer Moen</p>
+            <p class="persons-name">Kristoffer Moen</p>
             <p>Innehaver/Daglig Leder</p>
             <ul>
-              <li><a href="" class="accent-border">35 93 10 20</a></li>
+              <li class="persons-phone">
+                <a href="" class="accent-border">35 93 10 20</a>
+              </li>
               <li>
                 <a href="" class="accent-border">Kristoffer@odin-eiendom.no</a>
               </li>
@@ -73,10 +75,12 @@
           </li>
           <li class="persons-item">
             <img src="./img/person2.jpg" alt="man" />
-            <p>Kristoffer Moen</p>
+            <p class="persons-name">Kristoffer Moen</p>
             <p>Innehaver/Daglig Leder</p>
             <ul>
-              <li><a href="" class="accent-border">35 93 10 20</a></li>
+              <li class="persons-phone">
+                <a href="" class="accent-border">35 93 10 20</a>
+              </li>
               <li>
                 <a href="" class="accent-border">Kristoffer@odin-eiendom.no</a>
               </li>
@@ -84,29 +88,35 @@
           </li>
         </ul>
       </div>
-      <div class="contacts-form">
+      <div class="contacts__form">
         <form action="" class="form">
-          <h3>Kontaktskjema</h3>
-          <div class="formfield">
-            <label for="name">Navn</label>
-            <input type="text" name="name" id="name" autofocus />
-          </div>
-          <div class="formfield">
-            <label for="email">Epost</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="formfield">
-            <label for="tel">Mobil</label>
-            <input type="tel" name="tel" id="tel" />
-          </div>
-
-          <div class="formfield">
-            <label for="message">Melding</label>
-            <textarea name="message" id="message" rows="10"></textarea>
-          </div>
-
-          <div class="formfield">
+          <h3 class="contacts__form-title">Kontaktskjema</h3>
+          <div class="contacts__form-formfield">
+            <!-- <label for="name">Navn</label> -->
             <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Navn"
+            />
+          </div>
+          <div class="contacts__form-formfield">
+            <!-- <label for="email">Epost</label> -->
+            <input type="email" name="email" id="email" placeholder="Epost"/>
+          </div>
+          <div class="contacts__form-formfield">
+            <!-- <label for="tel">Mobil</label> -->
+            <input type="tel" name="tel" id="tel" placeholder="Mobil"/>
+          </div>
+
+          <div class="contacts__form-formfield contacts__form-message">
+            <!-- <label for="message">Melding</label> -->
+            <textarea name="message" id="message" rows="1" placeholder="Melding"></textarea>
+          </div>
+
+          <div class="contacts__form-consent">
+            <input
+              class="visually-hidden"
               type="checkbox"
               name="consent"
               value="consent"
@@ -115,7 +125,7 @@
             <label for="consent">Consent</label>
           </div>
 
-          <button class="description-button">
+          <button class="description-button contacts__form-button">
             Send melding
             <svg class="arrow-svg" width="26" height="19">
               <use href="./svg/symbol-defs.svg#arrow"></use>
@@ -125,7 +135,7 @@
       </div>
       <div class="partners">
         <h3>Våre Samarbeidspartnere</h3>
-        <ul class="partners-list">
+        <ul class="partners__list">
           <li class="partner-item">
             <img src="./img/partner1.png" alt="wexels" />
           </li>

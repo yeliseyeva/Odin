@@ -47,5 +47,8 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7429" d="M1.773 31.030l29.092-29.092"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7429" d="M1.884 1.773l29.092 29.092"></path>
 </symbol>
+<symbol id="consest" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M0.533 0.533h30.933v30.933h-30.933v-30.933z"></path>
+</symbol>
 </defs>
 </svg>
