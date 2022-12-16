@@ -4,6 +4,7 @@
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
+    
     // grid-template-rows: repeat(3);
 }
 
@@ -79,7 +80,13 @@ text-align: center;
  .partners__list{
     display: flex;
     justify-content: center;
-    margin-top: 32px
+    margin-top: 32px;
+
+    align-items: center;
+ }
+
+ .partner-item:not(:last-child){
+margin-right: 50px;
  }
 
  .contacts__form{

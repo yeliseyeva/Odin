@@ -19,6 +19,7 @@
 
 .about__conteiner {
   padding-top: 104px;
+  padding-bottom: 118px;
 }
 
 .about__benefits-list {
@@ -39,4 +40,30 @@
   margin-bottom: 31px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about__benefits-description {
+  margin-top: 12px;
+}
+
+.about__housing-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.about_housing-item {
+  width: 577px;
+}
+
+.about_housing-item h3 {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.about_housing-item p {
+  font-size: 20px;
 }/*# sourceMappingURL=about.css.map */
