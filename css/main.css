@@ -39,7 +39,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .second-title {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 .visually-hidden {
@@ -94,11 +94,6 @@ body {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1280px) {
-  .header {
-    width: 100%;
-  }
-}
 .header {
   z-index: 2;
   height: 130px;
@@ -107,9 +102,19 @@ body {
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     position: fixed;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 100%;
   }
 }
 .header-conteiner {
@@ -134,6 +139,9 @@ body {
   }
 }
 .menu-button {
+  z-index: 1;
+  top: -20px;
+  right: -20px;
   width: 130px;
   height: 130px;
   border: none;
@@ -157,10 +165,8 @@ body {
     left: 0;
     min-height: 100%;
     padding: 137px 40px;
-    width: 322px;
+    width: 65%;
     background-color: #fff;
-    opacity: 0;
-    pointer-events: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -226,20 +232,35 @@ body {
 }
 
 .copyright {
-  display: flex;
   padding-top: 19px;
 }
 
+@media screen and (min-width: 768px) {
+  .copyright {
+    display: flex;
+  }
+}
 .copyright-paragraph {
   font-size: 16px;
   font-weight: 400;
 }
 
+@media screen and (max-width: 767px) {
+  .copyrigth-paragraph > span {
+    display: block;
+  }
+}
 .social-list {
   display: flex;
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .social-list {
+    margin-top: 11px;
+    justify-content: center;
+  }
+}
 .social-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -376,13 +397,17 @@ body {
   }
 }
 .project-item {
-  width: 384.33px;
   justify-self: center;
 }
 
 @media screen and (max-width: 767px) {
   .project-item:not(:last-child) {
     margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-item {
+    width: 384.33px;
   }
 }
 .projects-img {
@@ -403,7 +428,6 @@ body {
 .project-date {
   font-size: 16px;
   font-weight: 400;
-  width: 384.33px;
   text-align: center;
 }
 

@@ -27,13 +27,17 @@
   }
 }
 .project-item {
-  width: 384.33px;
   justify-self: center;
 }
 
 @media screen and (max-width: 767px) {
   .project-item:not(:last-child) {
     margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-item {
+    width: 384.33px;
   }
 }
 .projects-img {
@@ -54,6 +58,5 @@
 .project-date {
   font-size: 16px;
   font-weight: 400;
-  width: 384.33px;
   text-align: center;
 }/*# sourceMappingURL=projects.css.map */

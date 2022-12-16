@@ -1,8 +1,4 @@
-@media screen and (min-width: 1280px) {
-  .header {
-    width: 100%;
-  }
-}
+
 .header {
   z-index: 2;
 
@@ -12,10 +8,21 @@
 
   background-color: #fff;
 }
+@media screen and (max-width: 767px){
+  .header{
+    position: relative;
+  }
+}
 
 @media screen and (min-width: 768px){
   .header {
     position: fixed;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 100%;
   }
 }
 
@@ -43,6 +50,9 @@
 
 
 .menu-button {
+  z-index: 1;
+  top: -20px;
+    right: -20px;
   width: 130px;
   height: 130px;
 
@@ -67,12 +77,12 @@
     left: 0;
     min-height: 100%;
     padding: 137px 40px;
-    width: 322px;
+    width: 65%;
     
     background-color: #fff;
 
-    opacity: 0;
-    pointer-events: none;
+    // opacity: 0;
+    // pointer-events: none;
   }
 }
 @media screen and (min-width: 768px){
