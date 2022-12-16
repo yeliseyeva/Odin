@@ -79,6 +79,7 @@ body {
   background-color: inherit;
   font-size: 24px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .header {
@@ -295,7 +296,6 @@ body {
 }
 
 .news-conteiner {
-  position: relative;
   padding-bottom: 119.5px;
 }
 
@@ -356,6 +356,7 @@ body {
   background-color: inherit;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .page-title {
@@ -563,6 +564,7 @@ body {
   background-color: inherit;
   font-size: 24px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .buttons-item:not(:last-child) {
@@ -909,8 +911,8 @@ body {
 
 .cookies {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 3%;
+  left: 2%;
   width: 936px;
   background-color: #fed6b8;
   border-radius: 20px;
@@ -945,6 +947,7 @@ body {
   font-size: 24px;
   border-radius: 60px;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .cookies__button-accept {
