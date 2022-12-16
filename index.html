@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header conteiner">
       <div class="header-conteiner conteiner">
         <a class="logo-link" href="./index.html">
           <img class="logo-img" src="/img/Logo1.png" alt="logo" />
         </a>
+
+        <button type="button" class="menu-button">
+          <svg width="45" height="45">
+            <use href="./svg/symbol-defs.svg#burger"></use>
+          </svg>
+        </button>
+
         <ul class="nav-list list">
           <li class="nav-item">
             <a href="./projects.html">Prosjekter</a>
@@ -191,7 +198,7 @@
         </svg>
       </button>
 
-      <div class="cookies">
+      <div class="cookies visually-hidden">
         <div class="cookies__conteiner">
           <div class="cookies__header">
             <svg width="64" height="67">
