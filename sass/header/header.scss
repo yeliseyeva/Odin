@@ -27,6 +27,7 @@
 }
 
 .header-conteiner {
+  position: relative;
   display: flex;
   height: 100%;
 }
@@ -50,15 +51,18 @@
 
 
 .menu-button {
-  z-index: 1;
+  position: absolute;
+  right: -20px;
   top: -20px;
-    right: -20px;
+  z-index: 1;
+
   width: 130px;
   height: 130px;
 
+
   border: none;
   border-radius: 50%;
-  background-color: rgba(246, 246, 246, 1);
+  background-color: #F7F7F7;
 }
 
 @media screen and (min-width: 767px) {
