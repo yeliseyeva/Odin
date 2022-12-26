@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <header class="header conteiner">
-      <div class="header-conteiner">
+    <header class="header">
+      <div class="header-conteiner conteiner">
         <a class="logo-link" href="./index.html">
           <img class="logo-img" src="/img/Logo1.png" alt="logo" />
         </a>
 
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button js-menu-button" aria-controls="nav-menu">
           <svg width="45" height="45">
-            <use href="./svg/symbol-defs.svg#menu-button"></use>
-            <use href="./svg/symbol-defs.svg#cross"></use>
+            <use href="./svg/symbol-defs.svg#menu-button" class="icon-burger"></use>
+            <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
           </svg>
         </button>
 
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="./projects.html">Prosjekter</a>
-          </li>
-          <li class="nav-item">
-            <a href="./about.html">Om oss</a>
-          </li>
-          <li class="nav-item">
-            <a href="./news.html">Nyheter</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contacts.html">Kontakt</a>
-          </li>
-        </ul>
+          <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
+            <li class="nav-item">
+              <a href="./projects.html">Prosjekter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a href="./news.html">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html">Kontakt</a>
+            </li>
+          </ul>
       </div>
     </header>
     <div class="hero">
@@ -274,5 +274,7 @@
       </div>
       </div>
     </footer>
+
+    <script src="./js/menuButton.js"></script>
   </body>
 </html>

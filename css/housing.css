@@ -12,6 +12,11 @@
   padding-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .housing {
+    padding-top: 260px;
+  }
+}
 .housing-list {
   display: flex;
   text-align: center;

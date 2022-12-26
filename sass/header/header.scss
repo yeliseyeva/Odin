@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 767px) {
   .logo-img {
-    width: 245px;
+    max-width: 245px;
     height: 77px;
   }
 }
@@ -52,9 +52,12 @@
 
 .menu-button {
   position: absolute;
-  right: -20px;
-  top: -20px;
+  top: 0;
+    right: 0;
   z-index: 1;
+
+  margin-right: -5%;
+    margin-top: -6%;
 
   width: 130px;
   height: 130px;
@@ -71,6 +74,18 @@
   }
 }
 
+.icon-cross {
+  display: none;
+}
+
+.is-open .icon-cross{
+  display: block;
+}
+
+.is-open .icon-burger{
+  display: none;
+}
+
 .nav-list {
   margin-left: auto;
 }
@@ -85,9 +100,19 @@
     
     background-color: #fff;
 
+  
     // opacity: 0;
     // pointer-events: none;
+
+    &.is-hidden{
+      opacity: 0;
+      pointer-events: none;
+    }
   }
+
+
+
+
 }
 @media screen and (min-width: 768px){
   .nav-list{
@@ -105,3 +130,4 @@
 .nav-item:not(:last-child) {
   margin-right: 37px;
 }
+
