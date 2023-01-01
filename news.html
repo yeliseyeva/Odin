@@ -11,22 +11,31 @@
     <header class="header">
       <div class="header-conteiner conteiner">
         <a class="logo-link" href="./index.html">
-        <img class="logo-img" src="/img/Logo1.png" alt="logo"/>
-      </a>
-      <ul class="nav-list list">
-        <li class="nav-item">
-          <a href="./projects.html">Prosjekter</a>
-        </li>
-        <li class="nav-item"> 
-          <a href="./about.html">Om oss</a>
-        </li>
-        <li class="nav-item">
-          <a href="./news.html" class="accent-border">Nyheter</a>
-        </li>
-        <li class="nav-item">
-          <a href="./contacts.html">Kontakt</a>
-        </li>
-      </ul></div>
+          <img class="logo-img" src="/img/Logo1.png" alt="logo" />
+        </a>
+
+        <button type="button" class="menu-button js-menu-button" aria-controls="nav-menu">
+          <svg width="45" height="45">
+            <use href="./svg/symbol-defs.svg#menu-button" class="icon-burger"></use>
+            <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
+          </svg>
+        </button>
+
+          <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
+            <li class="nav-item">
+              <a href="./projects.html">Prosjekter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a href="./news.html">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html">Kontakt</a>
+            </li>
+          </ul>
+      </div>
     </header>
     
     <div class="page-title">
@@ -109,11 +118,12 @@
         </li>
       </ul>
     </div>
-    <footer class="footer-conteiner conteiner">
-      <h2 class="second-title">Kontaktinformasjon</h2>
+    <footer class="conteiner">
+      <div class="footer__conteiner">
+        <h2 class="second-title">Kontaktinformasjon</h2>
       <ul class="contacts-list list">
         <li class="contakts-item">
-          <p class="contacts-kind">Addrese</p>
+          <p class="footer__contacts-kind">Addrese</p>
           <address>
             <p>Odin Eiendom</p>
             <p>Lunderingen 1</p>
@@ -122,28 +132,44 @@
           </address>
         </li>
         <li class="contakts-item">
-          <p class="contacts-kind">Telefon</p>
+          <p class="footer__contacts-kind">Telefon</p>
           <p>Ma - fre 10-16</p>
           <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
         </li>
         <li class="contakts-item">
-          <p class="contacts-kind">Mail</p>
-          <a href="malito:kontakt@odinedom.no" class="contacts-link">kontakt@odinedom.no</a>
+          <p class="footer__contacts-kind">Mail</p>
+          <a href="malito:kontakt@odinedom.no" class="contacts-link"
+            >kontakt@odinedom.no</a
+          >
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyrigth-paragraph">Copyright 2021 © Moen Eiendom - Org nr: 918712267</p>
+        <p class="copyrigth-paragraph">
+          Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
+        </p>
         <ul class="social-list list">
-          <li class="social-item"><a href=""><svg class="social-svg" width="21" height="33">
-              <use href="./svg/symbol-defs.svg#facebook"></use>
-          </svg></a>
+          <li class="social-item">
+            <a href=""
+              ><svg class="social-svg" width="21" height="33">
+                <use href="./svg/symbol-defs.svg#facebook"></use></svg
+            ></a>
           </li>
-          <li class="social-item"><a href=""><svg class="social-svg" width="21" height="33"><use href="./svg/symbol-defs.svg#linkedin"></use></svg></a>
+          <li class="social-item">
+            <a href=""
+              ><svg class="social-svg" width="21" height="33">
+                <use href="./svg/symbol-defs.svg#linkedin"></use></svg
+            ></a>
           </li>
-          <li class="social-item"><a href=""><svg class="social-svg" width="21" height="33"><use href="./svg/symbol-defs.svg#instagram"></use></svg></a>
+          <li class="social-item">
+            <a href=""
+              ><svg class="social-svg" width="21" height="33">
+                <use href="./svg/symbol-defs.svg#instagram"></use></svg
+            ></a>
           </li>
-      </ul>
+        </ul>
+      </div>
       </div>
     </footer>
+    <script src="./js/menuButton.js"></script>
   </body>
 </html>

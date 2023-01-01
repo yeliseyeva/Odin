@@ -27,7 +27,7 @@
 }
 
 .header-conteiner {
-  position: relative;
+
   display: flex;
   height: 100%;
 }
@@ -55,23 +55,28 @@
   top: 0;
     right: 0;
   z-index: 1;
+  width: 110px;
+  height: 110px;
 
-  margin-right: -5%;
-    margin-top: -6%;
-
-  width: 130px;
-  height: 130px;
-
-
+  background-color: inherit;
   border: none;
-  border-radius: 50%;
-  background-color: #F7F7F7;
+
+  background-image: url("../../img/elipse.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
 
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button > svg {
+  position: absolute;
+    top: 26px;
+    right: 26px;
 }
 
 .icon-cross {
