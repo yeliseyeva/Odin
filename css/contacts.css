@@ -63,6 +63,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .partners {
+    padding-top: 65px;
+  }
+}
 .partners > h3 {
   font-size: 36px;
   font-weight: 900;
