@@ -62,11 +62,15 @@
        object-fit: cover;
     border-radius: 12px;
   }
+  .persons-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 .persons-item > .persons-name {
   margin-top: 24px;
   margin-bottom: 11px;
   font-size: 20px;
+  line-height: 1;
 }
 
 .persons-phone {
@@ -79,6 +83,11 @@
   margin-top: 63px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__form {
+    margin-top: 40px;
+  }
+}
 .contacts__form-title {
   margin-bottom: 42px;
   font-size: 36px;
@@ -191,4 +200,10 @@
 
 .contacts__form-button {
   margin-top: 41px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__partners {
+    display: none;
+  }
 }/*# sourceMappingURL=contacts.css.map */

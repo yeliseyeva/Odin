@@ -73,6 +73,10 @@
     object-fit: cover;
     border-radius: 12px;
    }
+
+   .persons-item:not(:last-child){
+      margin-bottom: 40px;
+   }
 }
 
 .persons-item>.persons-name{
@@ -80,6 +84,7 @@
     margin-bottom: 11px;
 
     font-size: 20px;
+    line-height: 1;
 }
 
 .persons-phone{
@@ -92,6 +97,12 @@
      grid-area: 2/2/3/3;
 
      margin-top: 63px;
+ }
+
+ @media screen and (max-width: 767px) {
+   .contacts__form{
+      margin-top: 40px;
+   }
  }
 
  .contacts__form-title{
@@ -209,3 +220,8 @@ text-align: center;
     margin-top: 41px;
  }
 
+@media screen and (max-width: 767px) {
+   .contacts__partners{
+      display: none;
+   }
+}
