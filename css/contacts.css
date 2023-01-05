@@ -14,8 +14,14 @@
   grid-area: 1/1/2/2;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    margin-bottom: 40px;
+  }
+}
 .contacts__list-item {
   font-size: 20px;
+  line-height: 1.36;
 }
 
 .contacts__list-item:not(:last-child) {
@@ -25,21 +31,38 @@
 .contacts-kind {
   margin-bottom: 32px;
   font-size: 36px;
+  font-weight: 900;
+  line-height: 1.05;
 }
 
 .persons-list {
-  display: flex;
   justify-content: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  grid-area: 1/2/2/3;
 }
 
 .persons-item {
-  width: 270px;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .persons-list {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    grid-area: 1/2/2/3;
+  }
+  .persons-item {
+    width: 270px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .persons-item > img {
+    height: 293px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+}
 .persons-item > .persons-name {
   margin-top: 24px;
   margin-bottom: 11px;
