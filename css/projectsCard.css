@@ -4,6 +4,11 @@
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .options-conteiner {
+    padding-top: 0;
+  }
+}
 .carousel {
   padding-top: 130px;
 }

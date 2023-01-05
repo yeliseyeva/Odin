@@ -596,14 +596,15 @@ body {
   position: relative;
 }
 
-.carousel-container {
-  box-shadow: 0 0 5px rgb(204, 204, 204);
+@media screen and (max-width: 767px) {
+  .carousel-img {
+    max-width: 356px;
+    height: 273px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
 }
-
-.carousel-container img {
-  border-radius: 0.5em;
-}
-
 .hidden {
   display: none;
 }
@@ -616,6 +617,11 @@ body {
   display: inline;
 }
 
+@media screen and (max-width: 767px) {
+  .arrow {
+    display: none;
+  }
+}
 .prev, .arrow {
   cursor: pointer;
   position: absolute;
@@ -645,15 +651,29 @@ body {
 }
 
 .carousel-caption {
+  margin-top: 15px;
   text-align: end;
+  font-size: 20px;
+  line-height: 1.36;
 }
 
+@media screen and (max-width: 767px) {
+  .carousel-caption {
+    margin-top: 11px;
+    text-align: center;
+  }
+}
 .options-conteiner {
   padding-top: 130px;
   background-color: #fff;
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .options-conteiner {
+    padding-top: 0;
+  }
+}
 .carousel {
   padding-top: 130px;
 }

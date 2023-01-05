@@ -10,6 +10,10 @@ let imgPosition = 0;
 next.addEventListener('click', nextImg);
 prev.addEventListener('click', prevImg);
 
+imgs.forEach(img => {
+    img.addEventListener('click', nextImg)
+})
+
 // Update Position
 function updatePosition (){
 //   Images
@@ -47,11 +51,3 @@ function prevImg(){
     }
     updatePosition();
 }
-
-// Dot Position
-dots.forEach((dot, dotPosition) => {
-  dot.addEventListener("click", () => {
-    imgPosition = dotPosition
-    updatePosition(dotPosition)
-  })
-})
