@@ -29,6 +29,10 @@
     justify-content: center;
   }
 }
+.housing-item {
+  line-height: 1;
+}
+
 .housing-item:not(:last-child) {
   margin-right: 33px;
 }

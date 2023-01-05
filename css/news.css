@@ -42,16 +42,19 @@
   margin-top: 16px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 0.95;
 }
 
 .news-title {
   margin-top: 4px;
   font-size: 20px;
   font-weight: 400;
+  line-height: 1.05;
 }
 
 .news-text {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.39;
 }/*# sourceMappingURL=news.css.map */

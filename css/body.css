@@ -5,6 +5,7 @@ body {
 .second-title {
   font-size: 48px;
   font-weight: 900;
+  line-height: 0.95;
 }
 
 @media screen and (max-width: 767px) {

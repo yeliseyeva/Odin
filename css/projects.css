@@ -51,6 +51,7 @@
   font-size: 20px;
   margin-bottom: 3px;
   font-weight: 400;
+  line-height: 1;
   /* width: 384.33px; */
   text-align: center;
 }
@@ -59,4 +60,5 @@
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+  line-height: 1.6;
 }/*# sourceMappingURL=projects.css.map */
