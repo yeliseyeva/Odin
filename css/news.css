@@ -24,20 +24,6 @@
     row-gap: 24px;
   }
 }
-.news-item {
-  justify-self: center;
-}
-
-@media screen and (max-width: 767px) {
-  .news-item:not(:last-child) {
-    margin-bottom: 24px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .news-item {
-    width: 384.33px;
-  }
-}
 .news-date {
   margin-top: 16px;
   font-size: 14px;
@@ -45,7 +31,7 @@
   line-height: 0.95;
 }
 
-.news-title {
+.news__card-title {
   margin-top: 4px;
   font-size: 20px;
   font-weight: 400;

@@ -26,24 +26,35 @@
     row-gap: 24px;
   }
 }
-.project-item {
+.card-item {
   justify-self: center;
 }
 
 @media screen and (max-width: 767px) {
-  .project-item:not(:last-child) {
+  .card-item:not(:last-child) {
     margin-bottom: 24px;
   }
 }
 @media screen and (min-width: 768px) {
-  .project-item {
+  .card-item {
     width: 384.33px;
   }
 }
-.projects-img {
-  /* width: 384.33px; */
-  /* height: 319.79px; */
-  border-radius: 3%;
+.card__link-img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card-link {
+  display: block;
+}
+
+.card-img {
+  transition: 150ms;
+}
+
+.card-item:hover .card-img {
+  transform: scale(1.1);
 }
 
 .project-title {
