@@ -104,6 +104,7 @@
   }
 }
 .nav-item {
+  position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
   font-size: 20px;
@@ -112,4 +113,13 @@
 
 .nav-item:not(:last-child) {
   margin-right: 37px;
+}
+
+.nav-project::after {
+  content: "Prosjekter";
+  display: inline-block;
+  color: #087313;
+  position: absolute;
+  left: 0;
+  top: 51%;
 }/*# sourceMappingURL=header.css.map */

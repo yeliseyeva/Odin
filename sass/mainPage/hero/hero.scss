@@ -75,18 +75,20 @@
 
 .contents-text {
   margin-top: 19px;
-  /* width: 764px; */
   font-size: 14px;
   font-weight: 400;
   line-height: 1.36;
 }
 
 @media screen and (max-width: 767px){
-  .contents-text{
-    margin-top: 17px;
-  }
+
 
   .hero-img{
     max-width: 425px;
+  }
+
+  .contents-text {
+    margin-top: 1px;
+    
   }
 }

@@ -126,6 +126,8 @@
 }
 
 .nav-item {
+  position: relative
+  ;
   padding-top: 48px;
   padding-bottom: 48px;
   font-size: 20px;
@@ -136,3 +138,35 @@
   margin-right: 37px;
 }
 
+//  .nav-item::after{
+//    content: "";
+//    display: inline-block;
+//    background-color: #087313;
+//    width: 100%;
+//    height: 20px;
+
+// }
+
+
+.nav-project::after{
+  content: "Prosjekter";
+  display: inline-block;
+  color: #087313;
+
+  position: absolute;
+  left: 0;
+  top: 51%;
+
+}
+
+// .nav-about::after{
+//   content: "Om oss";
+// }
+
+// .nav-news::after{
+//   content: "Nyheter";
+// }
+
+// .nav-contacts::after{
+//   content: "Kontakt";
+// }

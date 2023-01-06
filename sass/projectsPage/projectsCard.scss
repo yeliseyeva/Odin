@@ -46,6 +46,13 @@
   font-size: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  .options-paragraph{
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+
 
 
 .options-list {
@@ -69,7 +76,7 @@
     }
 
     .options-list{
-        margin-top: -33.3%;
+        margin-top: -35%;
     }
   }
 
@@ -154,6 +161,8 @@
   grid-area: 1/2/2/3;
 }
 
+
+
 .description-title {
   margin-bottom: 29px;
 
@@ -161,12 +170,16 @@
   font-weight: 900;
 }
 
+
+
 .description-text {
   margin-bottom: 29px;
 
   font-size: 20px;
   font-weight: 400;
 }
+
+
 
 .description-button {
   display: block;
@@ -197,6 +210,28 @@
   font-weight: 400;
 
   text-align: center;
+}
+
+@media screen and (max-width: 767px){
+  .description-block{
+    padding-top:53px;
+  }
+
+  .description-title {
+    margin-bottom: 14px;
+  
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.05;
+  }
+
+  .description-text {
+    margin-bottom: 26px;
+  }
+
+  .project-contact {
+    display: none;
+  }
 }
 
 .contacts-title {
