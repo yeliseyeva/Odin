@@ -38,7 +38,7 @@
   padding: 19px 27px;
   color: #007b25;
   font-size: 30px;
-  transition: 0.3s ease;
+  transition: 150ms ease;
   border-radius: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;

@@ -115,11 +115,93 @@
   margin-right: 37px;
 }
 
+.nav-link {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  color: #FFF;
+}
+
+.nav-project::before {
+  content: "Prosjekter";
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  transition: transform 150ms linear;
+}
+
 .nav-project::after {
   content: "Prosjekter";
   display: inline-block;
   color: #087313;
   position: absolute;
   left: 0;
-  top: 51%;
+  top: 120%;
+  transition: transform 150ms linear;
+}
+
+.nav-about::before {
+  content: "Om oss";
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  transition: transform 150ms linear;
+}
+
+.nav-about::after {
+  content: "Om oss";
+  display: inline-block;
+  color: #087313;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  transition: transform 150ms linear;
+}
+
+.nav-news::before {
+  content: "Nyheter";
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  transition: transform 150ms linear;
+}
+
+.nav-news::after {
+  content: "Nyheter";
+  display: inline-block;
+  color: #087313;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  transition: transform 150ms linear;
+}
+
+.nav-contacts::before {
+  content: "Kontakt";
+  display: inline-block;
+  color: #000;
+  position: absolute;
+  transition: transform 150ms linear;
+}
+
+.nav-contacts::after {
+  content: "Kontakt";
+  display: inline-block;
+  color: #087313;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  transition: transform 150ms linear;
+}
+
+.nav-project:hover::before,
+.nav-project:hover::after,
+.nav-about:hover::before,
+.nav-about:hover::after,
+.nav-news:hover::before,
+.nav-news:hover::after,
+.nav-contacts:hover::before,
+.nav-contacts:hover::after {
+  transform: translateY(-100%);
 }/*# sourceMappingURL=header.css.map */
