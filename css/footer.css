@@ -42,5 +42,12 @@
 }
 
 .contacts-link {
-  border-bottom: 1px solid #007825;
+  border-bottom: 2px solid #007825;
+  transition: border-bottom 100ms linear, color 100ms linear;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  color: #007825;
 }/*# sourceMappingURL=footer.css.map */

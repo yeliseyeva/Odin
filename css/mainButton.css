@@ -10,4 +10,16 @@
   font-weight: 400;
   line-height: 1;
   cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear, fill 250ms linear;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #087313;
+  color: #fff;
+}
+
+.main-button:hover,
+.main-button:focus .arrow-svg {
+  fill: #fff;
 }/*# sourceMappingURL=mainButton.css.map */

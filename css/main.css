@@ -60,6 +60,12 @@ body {
 
 .accent-border {
   border-bottom: 2px solid #007825;
+  transition: border-bottom 100ms linear;
+}
+
+.accent-border:hover,
+.accent-border:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .switch-border {
@@ -95,6 +101,18 @@ body {
   font-weight: 400;
   line-height: 1;
   cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear, fill 250ms linear;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #087313;
+  color: #fff;
+}
+
+.main-button:hover,
+.main-button:focus .arrow-svg {
+  fill: #fff;
 }
 
 .header {
@@ -217,6 +235,7 @@ body {
 .nav-link {
   position: relative;
   display: inline-block;
+  padding-bottom: 4px;
   height: 20px;
   overflow: hidden;
   color: #FFF;
@@ -227,7 +246,7 @@ body {
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-project::after {
@@ -237,7 +256,7 @@ body {
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-about::before {
@@ -245,7 +264,7 @@ body {
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-about::after {
@@ -255,7 +274,7 @@ body {
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::before {
@@ -263,7 +282,7 @@ body {
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::after {
@@ -273,7 +292,7 @@ body {
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::before {
@@ -281,7 +300,7 @@ body {
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::after {
@@ -291,7 +310,7 @@ body {
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-project:hover::before,
@@ -349,7 +368,14 @@ body {
 }
 
 .contacts-link {
-  border-bottom: 1px solid #007825;
+  border-bottom: 2px solid #007825;
+  transition: border-bottom 100ms linear, color 100ms linear;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  color: #007825;
 }
 
 .copyright {
@@ -954,7 +980,7 @@ body {
 }
 
 .contacts-item {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .backdrop {

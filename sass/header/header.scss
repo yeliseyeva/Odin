@@ -67,6 +67,7 @@
 
 }
 
+
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
@@ -140,6 +141,7 @@
 .nav-link{
   position: relative;
   display: inline-block;
+  padding-bottom: 4px;
 height: 20px;
 overflow: hidden;
   color: #FFF;
@@ -154,7 +156,7 @@ overflow: hidden;
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 
 }
 
@@ -165,14 +167,14 @@ overflow: hidden;
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 .nav-about::before{
   content: "Om oss";
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-about::after{
@@ -182,7 +184,7 @@ overflow: hidden;
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::before{
@@ -190,7 +192,7 @@ overflow: hidden;
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::after{
@@ -200,7 +202,7 @@ overflow: hidden;
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::before{
@@ -208,7 +210,7 @@ overflow: hidden;
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::after{
@@ -218,7 +220,7 @@ overflow: hidden;
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-project:hover::before, 

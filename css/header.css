@@ -118,6 +118,7 @@
 .nav-link {
   position: relative;
   display: inline-block;
+  padding-bottom: 4px;
   height: 20px;
   overflow: hidden;
   color: #FFF;
@@ -128,7 +129,7 @@
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-project::after {
@@ -138,7 +139,7 @@
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-about::before {
@@ -146,7 +147,7 @@
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-about::after {
@@ -156,7 +157,7 @@
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::before {
@@ -164,7 +165,7 @@
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-news::after {
@@ -174,7 +175,7 @@
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::before {
@@ -182,7 +183,7 @@
   display: inline-block;
   color: #000;
   position: absolute;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-contacts::after {
@@ -192,7 +193,7 @@
   position: absolute;
   left: 0;
   top: 120%;
-  transition: transform 150ms linear;
+  transition: transform 100ms linear;
 }
 
 .nav-project:hover::before,
