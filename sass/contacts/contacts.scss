@@ -173,6 +173,15 @@ textarea {
   transition: border-bottom 100ms linear;
 }
 
+.contacts__form-label_mail{
+   width: 100%;
+}
+
+.smile-svg{
+   position: absolute;
+   right: 0;
+}
+
 .contacts__form-formfield > input:hover,
 textarea:hover {
   border-bottom: 1px solid rgba(0, 123, 37, 1);
@@ -189,22 +198,27 @@ textarea:focus {
   transition: transform 100ms linear, font-size 100ms linear;
 }
 
+
+
 .contacts__form-formfield_input:focus + .contacts__form-formfield_label,
 .contacts__form-text_input:focus + .contacts__form-text_label {
   transform: translateY(-100%);
   font-size: 13px;
 }
 
-.smile-svg{
-   position: absolute;
-   top: 25%;
-   right: 0;
+// .contacts__form-formfield_input:focus + .smile-svg{
+//    position: absolute;
+//    top: 25%;
+//    right: 0;
+// }
 
-  
-}
-.contacts__form-formfield_input:focus + .smile-svg{
-   stroke: red;
-}
+.styled-checkbox:checked + label:before {
+   content: "";
+   background-image: url(../../svg/checked.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
 
 
 .contacts__form-formfield_label {
