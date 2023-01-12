@@ -26,4 +26,8 @@ img {
 ul {
   margin: 0;
   padding: 0;
+}
+
+textarea {
+  resize: none;
 }/*# sourceMappingURL=base.css.map */

@@ -166,13 +166,25 @@ textarea:focus {
   border-bottom: 2px solid rgb(0, 123, 37);
 }
 
-.contacts__form-formfield > input:focus + .contacts__form-formfield > label {
-  margin-left: 50px;
+.contacts__form-formfield_label,
+.contacts__form-text_label {
+  transition: transform 100ms linear, font-size 100ms linear;
 }
 
-.contacts__form-formfield > label {
+.contacts__form-formfield_input:focus + .contacts__form-formfield_label,
+.contacts__form-text_input:focus + .contacts__form-text_label {
+  transform: translateY(-100%);
+  font-size: 13px;
+}
+
+.contacts__form-formfield_label {
   position: absolute;
   top: 25%;
+}
+
+.contacts__form-text_label {
+  position: absolute;
+  top: 0;
 }
 
 .contacts__form-formfield > textarea {
@@ -206,4 +218,54 @@ textarea:focus {
   .contacts__partners {
     display: none;
   }
+}
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 30px;
+  height: 30px;
+  background: inherit;
+}
+
+.styled-checkbox:hover + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked + label:before {
+  background: #007B25;
+}
+
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+
+.styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=contacts.css.map */
