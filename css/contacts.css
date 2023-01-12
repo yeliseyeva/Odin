@@ -166,6 +166,10 @@ textarea:focus {
   border-bottom: 2px solid rgb(0, 123, 37);
 }
 
+.contacts__form-formfield > input:focus + .contacts__form-formfield > label {
+  margin-left: 50px;
+}
+
 .contacts__form-formfield > label {
   position: absolute;
   top: 25%;
@@ -173,10 +177,6 @@ textarea:focus {
 
 .contacts__form-formfield > textarea {
   height: 100%;
-}
-
-.contacts__form-formfield:hover label {
-  font-size: 13px;
 }
 
 .contacts__form-message {
