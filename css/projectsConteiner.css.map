@@ -1,1 +1,1 @@
-{"version":3,"sources":["../sass/projectsPage/projectsConteiner.scss","projectsConteiner.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;ACCJ;;ADEC;EACG;IACI,kBAAA;ECCN;AACF","file":"projectsConteiner.css"}
+{"version":3,"sources":["../sass/projectsPage/projectsConteiner.scss","projectsConteiner.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;ACCF;;ADCA;EACE;IACE,kBAAA;ECEF;AACF","file":"projectsConteiner.css"}

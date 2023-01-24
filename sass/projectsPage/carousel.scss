@@ -2,15 +2,6 @@
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
-  .carousel-img {
-    max-width: 356px;
-    height: 273px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-}
-
 .hidden {
   display: none;
 }
@@ -19,12 +10,6 @@
 }
 .arrow {
   display: inline;
-}
-
-@media screen and (max-width: 767px) {
-  .arrow {
-    display: none;
-  }
 }
 
 .prev,
@@ -63,6 +48,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .carousel-img {
+    max-width: 356px;
+    height: 273px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .arrow {
+    display: none;
+  }
   .carousel-caption {
     margin-top: 11px;
     text-align: center;

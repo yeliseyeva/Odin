@@ -2,15 +2,6 @@
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
-  .carousel-img {
-    max-width: 356px;
-    height: 273px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 12px;
-  }
-}
 .hidden {
   display: none;
 }
@@ -23,11 +14,6 @@
   display: inline;
 }
 
-@media screen and (max-width: 767px) {
-  .arrow {
-    display: none;
-  }
-}
 .prev,
 .arrow {
   cursor: pointer;
@@ -66,6 +52,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .carousel-img {
+    max-width: 356px;
+    height: 273px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+  .arrow {
+    display: none;
+  }
   .carousel-caption {
     margin-top: 11px;
     text-align: center;

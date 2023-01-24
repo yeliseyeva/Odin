@@ -17,30 +17,12 @@
   line-height: 1.3;
 }
 
-@media screen and (min-width: 768px) {
-  .about__title-conteiner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 21px;
-  }
-  .about__title-conteiner p {
-    grid-column-start: 2;
-    grid-row-start: 2;
-  }
-}
 .about__title {
   font-size: 64px;
   font-weight: 900;
   line-height: 0.95;
 }
 
-@media screen and (max-width: 767px) {
-  .about__title {
-    margin-bottom: 19px;
-    font-size: 40px;
-    line-height: 0.95;
-  }
-}
 .about__conteiner {
   padding-top: 104px;
   padding-bottom: 118px;
@@ -52,12 +34,6 @@
   padding-bottom: 131px;
 }
 
-@media screen and (min-width: 768px) {
-  .about__benefits-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .about__benefits-item {
   max-width: 250px;
   text-align: center;
@@ -87,10 +63,36 @@
   margin-bottom: 45px;
 }
 
+.about_housing-item h3 {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.about_housing-item p {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
+  .about__title-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 21px;
+  }
+  .about__title-conteiner p {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .about__benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .about__housing-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about_housing-item {
+    width: 577px;
   }
   .about__house-img {
     max-width: 1200px;
@@ -103,21 +105,12 @@
     background-image: url(../../img/about-teracce.png);
   }
 }
-.about_housing-item {
-  width: 577px;
-}
-
-.about_housing-item h3 {
-  margin-bottom: 32px;
-  font-size: 36px;
-  font-weight: 900;
-}
-
-.about_housing-item p {
-  font-size: 20px;
-}
-
 @media screen and (max-width: 767px) {
+  .about__title {
+    margin-bottom: 19px;
+    font-size: 40px;
+    line-height: 0.95;
+  }
   .about__img {
     width: 358px;
     height: 273px;

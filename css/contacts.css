@@ -1,25 +1,7 @@
-@media screen and (max-width: 767px) {
-  .contacts-conteiner {
-    padding-top: 34px;
-    padding-bottom: 56px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts-conteiner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 82px;
-  }
-}
 .contacts {
   grid-area: 1/1/2/2;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__list {
-    margin-bottom: 40px;
-  }
-}
 .contacts__list-item {
   font-size: 20px;
   line-height: 1.36;
@@ -44,29 +26,6 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .persons-list {
-    display: flex;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
-    grid-area: 1/2/2/3;
-  }
-  .persons-item {
-    width: 270px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .persons-item > img {
-    height: 293px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 12px;
-  }
-  .persons-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
 .persons-item > .persons-name {
   margin-top: 24px;
   margin-bottom: 11px;
@@ -84,11 +43,6 @@
   margin-top: 63px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__form {
-    margin-top: 40px;
-  }
-}
 .contacts__form-title {
   margin-bottom: 42px;
   font-size: 36px;
@@ -107,12 +61,6 @@
   line-height: 1.05;
 }
 
-@media screen and (max-width: 767px) {
-  .partners > h3 {
-    font-size: 32px;
-    width: 349px;
-  }
-}
 .partners__list {
   justify-content: center;
   margin-top: 32px;
@@ -123,19 +71,6 @@
   width: 206px;
 }
 
-@media screen and (max-width: 767px) {
-  .partner-item:not(:last-child) {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .partners__list {
-    display: flex;
-  }
-  .partner-item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 .contacts__form {
   font-size: 20px;
 }
@@ -231,11 +166,6 @@ textarea:focus {
   margin-top: 41px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__partners {
-    display: none;
-  }
-}
 .styled-checkbox {
   position: absolute;
   opacity: 0;
@@ -263,4 +193,59 @@ textarea:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-conteiner {
+    padding-top: 34px;
+    padding-bottom: 56px;
+  }
+  .contacts__list {
+    margin-bottom: 40px;
+  }
+  .persons-item > img {
+    height: 293px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+  .persons-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .contacts__form {
+    margin-top: 40px;
+  }
+  .partners > h3 {
+    font-size: 32px;
+    width: 349px;
+  }
+  .partner-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .contacts__partners {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 82px;
+  }
+  .persons-list {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    grid-area: 1/2/2/3;
+  }
+  .persons-item {
+    width: 270px;
+    text-align: center;
+  }
+  .partners__list {
+    display: flex;
+  }
+  .partner-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }/*# sourceMappingURL=contacts.css.map */

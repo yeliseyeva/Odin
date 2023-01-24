@@ -1,28 +1,5 @@
-@media screen and (max-width: 767px) {
-  .contacts-conteiner {
-    padding-top: 34px;
-    padding-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts-conteiner {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    padding-top: 82px;
-  }
-}
-
 .contacts {
   grid-area: 1/1/2/2;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts__list {
-    margin-bottom: 40px;
-  }
 }
 
 .contacts__list-item {
@@ -49,32 +26,6 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .persons-list {
-    display: flex;
-    column-gap: 40px;
-    grid-area: 1/2/2/3;
-  }
-
-  .persons-item {
-    width: 270px;
-
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .persons-item > img {
-    height: 293px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-
-  .persons-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-}
-
 .persons-item > .persons-name {
   margin-top: 24px;
   margin-bottom: 11px;
@@ -92,12 +43,6 @@
   grid-area: 2/2/3/3;
 
   margin-top: 63px;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts__form {
-    margin-top: 40px;
-  }
 }
 
 .contacts__form-title {
@@ -120,13 +65,6 @@
   line-height: 1.05;
 }
 
-@media screen and (max-width: 767px) {
-  .partners > h3 {
-    font-size: 32px;
-    width: 349px;
-  }
-}
-
 .partners__list {
   justify-content: center;
   margin-top: 32px;
@@ -136,22 +74,6 @@
 
 .partner-item > a > img {
   width: 206px;
-}
-
-@media screen and (max-width: 767px) {
-  .partner-item:not(:last-child) {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .partners__list {
-    display: flex;
-  }
-
-  .partner-item:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 .contacts__form {
@@ -173,13 +95,13 @@ textarea {
   transition: border-bottom 100ms linear;
 }
 
-.contacts__form-label_mail{
-   width: 100%;
+.contacts__form-label_mail {
+  width: 100%;
 }
 
-.smile-svg{
-   position: absolute;
-   right: 0;
+.smile-svg {
+  position: absolute;
+  right: 0;
 }
 
 .contacts__form-formfield > input:hover,
@@ -198,8 +120,6 @@ textarea:focus {
   transition: transform 100ms linear, font-size 100ms linear;
 }
 
-
-
 .contacts__form-formfield_input:focus + .contacts__form-formfield_label,
 .contacts__form-text_input:focus + .contacts__form-text_label {
   transform: translateY(-100%);
@@ -213,13 +133,12 @@ textarea:focus {
 // }
 
 .styled-checkbox:checked + label:before {
-   content: "";
-   background-image: url(../../svg/checked.svg);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
- }
-
+  content: "";
+  background-image: url(../../svg/checked.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .contacts__form-formfield_label {
   position: absolute;
@@ -230,8 +149,6 @@ textarea:focus {
   position: absolute;
   top: 0;
 }
-
-
 
 .contacts__form-formfield > textarea {
   height: 100%;
@@ -259,12 +176,6 @@ textarea:focus {
 
 .contacts__form-button {
   margin-top: 41px;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts__partners {
-    display: none;
-  }
 }
 
 //  checkbox
@@ -299,3 +210,67 @@ textarea:focus {
   background-position: center;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts-conteiner {
+    padding-top: 34px;
+    padding-bottom: 56px;
+  }
+  .contacts__list {
+    margin-bottom: 40px;
+  }
+
+  .persons-item > img {
+    height: 293px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .persons-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .contacts__form {
+    margin-top: 40px;
+  }
+  .partners > h3 {
+    font-size: 32px;
+    width: 349px;
+  }
+
+  .partner-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  .contacts__partners {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-conteiner {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-top: 82px;
+  }
+
+  .persons-list {
+    display: flex;
+    column-gap: 40px;
+    grid-area: 1/2/2/3;
+  }
+
+  .persons-item {
+    width: 270px;
+
+    text-align: center;
+  }
+
+  .partners__list {
+    display: flex;
+  }
+
+  .partner-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
