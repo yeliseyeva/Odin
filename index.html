@@ -8,314 +8,328 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-conteiner conteiner">
-        <a class="logo-link" href="./index.html">
-          <img class="logo-img" src="/img/Logo1.png" alt="logo" />
-        </a>
+    <div class="background">
+      <header class="header">
+        <div class="header-conteiner conteiner">
+          <a class="logo-link" href="./index.html">
+            <img class="logo-img" src="/img/Logo1.png" alt="logo" />
+          </a>
 
-        <button
-          type="button"
-          class="menu-button js-menu-button"
-          aria-controls="nav-menu"
-        >
-          <svg width="45" height="45">
-            <use
-              href="./svg/symbol-defs.svg#menu-button"
-              class="icon-burger"
-            ></use>
-            <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
-          </svg>
-        </button>
-
-        <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
-          <li class="nav-item">
-            <a href="./projects.html" class="nav-project nav-link"
-              >Prosjekter</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="./about.html" class="nav-about nav-link">Om oss</a>
-          </li>
-          <li class="nav-item">
-            <a href="./news.html" class="nav-news nav-link">Nyheter</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contacts.html" class="nav-contacts nav-link">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="hero">
-      <div class="hero-conteiner conteiner">
-        <h1 class="main-title">Vi er med i <br />hele prosessen.</h1>
-        <div class="hero-contents">
-          <img src="./img/hero.png" alt="housing" class="hero-img" />
-          <p class="contents-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="housing conteiner">
-      <h2 class="visually-hidden">Boliger</h2>
-      <ul class="list housing-list">
-        <li class="housing-item">
-          <a><span class="housing-amount">22</span> Boliger i salg</a>
-        </li>
-        <li class="housing-item">
-          <a><span class="housing-amount">84</span> Boliger i utvikling</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="conteiner projects-conteiner">
-      <h2 class="second-title">Prosjekter</h2>
-      <ul class="projects-list list">
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project1.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project2.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project3.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project4.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project5.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./projectCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/project6.png" alt="house" class="card-img" />
-            </div>
-            <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
-            <p class="project-date">Lansering okt 2023</p>
-          </a>
-        </li>
-      </ul>
-      <button class="main-button">
-        Se alle prosjekter 
-        <svg class="arrow-svg" width="26" height="19">
-          <use href="./svg/symbol-defs.svg#arrow"></use>
-        </svg>
-      </button>
-    </div>
-
-
-
-    <div class="conteiner news-conteiner">
-      <h2 class="second-title">Nyheter</h2>
-      <ul class="news-list list">
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-            
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-            
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-            
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-           
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-            
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-        <li class="card-item">
-          <a href="./newsCard.html" class="card-link">
-            <div class="card__link-img">
-              <img src="./img/news1.png" alt="house" class="card-img" />
-            </div>
-            
-            <p class="news-date">Man. 31. okt</p>
-            <h3 class="news__card-title">Salgstart trinn 2 Strømdalspynten</h3>
-            <p class="news-text">
-              Vi har nå startet salget av prosjektet Strømdalspynten. 28
-              innholdsrike leiligheter sentralt beliggende på Myren og med
-              praktfull utsikt over store deler av Skien.
-            </p>
-          </a>
-        </li>
-      </ul>
-      <button class="main-button">
-        Se alle nyheter
-        <svg class="arrow-svg" width="26" height="19">
-          <use href="./svg/symbol-defs.svg#arrow"></use>
-        </svg>
-      </button>
-
-      <div class="cookies visually-hidden">
-        <div class="cookies__conteiner">
-          <div class="cookies__header">
-            <svg width="64" height="67">
-              <use href="./svg/symbol-defs.svg#smile-cookies"></use>
+          <button
+            type="button"
+            class="menu-button js-menu-button"
+            aria-controls="nav-menu"
+          >
+            <svg width="45" height="45">
+              <use
+                href="./svg/symbol-defs.svg#menu-button"
+                class="icon-burger"
+              ></use>
+              <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
             </svg>
-            <h3>We use cookies</h3>
-          </div>
-          <p>
-            We use cookies to personalise content and ads, to provide social
-            media features and to analyse our traffic. We also share information
-            about your use of our site with our social media, advertising and
-            analytics partners who may combine it with other information that
-            you’ve provided to them or that they’ve collected from your use of
-            their services.
-          </p>
-          <div class="cookies__buttons">
-            <button class="cookies__button-accept">Accept</button>
-            <button class="cookies__button-reject">Reject</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="conteiner">
-      <div class="footer__conteiner">
-        <h2 class="second-title">Kontaktinformasjon</h2>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Addrese</p>
-            <address>
-              <p>Odin Eiendom</p>
-              <p>Lunderingen 1</p>
-              <p>3941 Porsgrunn</p>
-              <a href="" class="contacts-link">Kart</a>
-            </address>
-          </li>
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Telefon</p>
-            <p>Ma - fre 10-16</p>
-            <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
-          </li>
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Mail</p>
-            <a href="malito:kontakt@odinedom.no" class="contacts-link"
-              >kontakt@odinedom.no</a
-            >
-          </li>
-        </ul>
-        <div class="copyright">
-          <p class="copyrigth-paragraph">
-            Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
-          </p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
-              ></a>
+          </button>
+
+          <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
+            <li class="nav-item">
+              <a href="./projects.html" class="nav-project nav-link"
+                >Prosjekter</a
+              >
             </li>
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#linkedin"></use></svg
-              ></a>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-about nav-link">Om oss</a>
             </li>
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
-              ></a>
+            <li class="nav-item">
+              <a href="./news.html" class="nav-news nav-link">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html" class="nav-contacts nav-link"
+                >Kontakt</a
+              >
             </li>
           </ul>
         </div>
+      </header>
+      <div class="hero">
+        <div class="hero-conteiner conteiner">
+          <h1 class="main-title">Vi er med i <br />hele prosessen.</h1>
+          <div class="hero-contents">
+            <img src="./img/hero.png" alt="housing" class="hero-img" />
+            <p class="contents-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+          </div>
+        </div>
       </div>
-    </footer>
+
+      <div class="housing conteiner">
+        <h2 class="visually-hidden">Boliger</h2>
+        <ul class="list housing-list">
+          <li class="housing-item">
+            <a><span class="housing-amount">22</span> Boliger i salg</a>
+          </li>
+          <li class="housing-item">
+            <a><span class="housing-amount">84</span> Boliger i utvikling</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="conteiner projects-conteiner">
+        <h2 class="second-title">Prosjekter</h2>
+        <ul class="projects-list list">
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project1.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project2.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project3.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project4.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project5.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./projectCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/project6.png" alt="house" class="card-img" />
+              </div>
+              <h3 class="project-title">Tollskogvegen II – Porsgrunn</h3>
+              <p class="project-date">Lansering okt 2023</p>
+            </a>
+          </li>
+        </ul>
+        <button tabindex="button" class="main-button">
+          Se alle prosjekter
+          <svg class="arrow-svg" width="26" height="19">
+            <use href="./svg/symbol-defs.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="conteiner news-conteiner">
+        <h2 class="second-title">Nyheter</h2>
+        <ul class="news-list list">
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+          <li class="card-item">
+            <a href="./newsCard.html" class="card-link">
+              <div class="card__link-img">
+                <img src="./img/news1.png" alt="house" class="card-img" />
+              </div>
+
+              <p class="news-date">Man. 31. okt</p>
+              <h3 class="news__card-title">
+                Salgstart trinn 2 Strømdalspynten
+              </h3>
+              <p class="news-text">
+                Vi har nå startet salget av prosjektet Strømdalspynten. 28
+                innholdsrike leiligheter sentralt beliggende på Myren og med
+                praktfull utsikt over store deler av Skien.
+              </p>
+            </a>
+          </li>
+        </ul>
+        <button class="main-button" type="button">
+          Se alle nyheter
+          <svg class="arrow-svg" width="26" height="19">
+            <use href="./svg/symbol-defs.svg#arrow"></use>
+          </svg>
+        </button>
+
+        <div class="cookies visually-hidden">
+          <div class="cookies__conteiner">
+            <div class="cookies__header">
+              <svg width="64" height="67">
+                <use href="./svg/symbol-defs.svg#smile-cookies"></use>
+              </svg>
+              <h3>We use cookies</h3>
+            </div>
+            <p>
+              We use cookies to personalise content and ads, to provide social
+              media features and to analyse our traffic. We also share
+              information about your use of our site with our social media,
+              advertising and analytics partners who may combine it with other
+              information that you’ve provided to them or that they’ve collected
+              from your use of their services.
+            </p>
+            <div class="cookies__buttons">
+              <button class="cookies__button-accept">Accept</button>
+              <button class="cookies__button-reject">Reject</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="conteiner">
+        <div class="footer__conteiner">
+          <h2 class="second-title">Kontaktinformasjon</h2>
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Addrese</p>
+              <address>
+                <p>Odin Eiendom</p>
+                <p>Lunderingen 1</p>
+                <p>3941 Porsgrunn</p>
+                <a href="" class="contacts-link">Kart</a>
+              </address>
+            </li>
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Telefon</p>
+              <p>Ma - fre 10-16</p>
+              <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
+            </li>
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Mail</p>
+              <a href="malito:kontakt@odinedom.no" class="contacts-link"
+                >kontakt@odinedom.no</a
+              >
+            </li>
+          </ul>
+          <div class="copyright">
+            <p class="copyrigth-paragraph">
+              Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
+            </p>
+            <ul class="social-list list">
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#linkedin"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="./js/menuButton.js"></script>
   </body>

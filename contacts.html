@@ -8,254 +8,260 @@
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-conteiner conteiner">
-        <a class="logo-link" href="./index.html">
-          <img class="logo-img" src="/img/Logo1.png" alt="logo" />
-        </a>
+    <div class="background">
+      <header class="header">
+        <div class="header-conteiner conteiner">
+          <a class="logo-link" href="./index.html">
+            <img class="logo-img" src="/img/Logo1.png" alt="logo" />
+          </a>
 
-        <button
-          type="button"
-          class="menu-button js-menu-button"
-          aria-controls="nav-menu"
-        >
-          <svg width="45" height="45">
-            <use
-              href="./svg/symbol-defs.svg#menu-button"
-              class="icon-burger"
-            ></use>
-            <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
-          </svg>
-        </button>
-
-        <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
-          <li class="nav-item">
-            <a href="./projects.html" class="nav-project nav-link"
-              >Prosjekter</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="./about.html" class="nav-about nav-link">Om oss</a>
-          </li>
-          <li class="nav-item">
-            <a href="./news.html" class="nav-news nav-link">Nyheter</a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="./contacts.html"
-              class="nav-contacts nav-link accent-border"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="page-title">
-      <h1 class="main-title conteiner">Kontakt</h1>
-    </div>
-    <div class="conteiner contacts-conteiner">
-      <div class="contacts">
-        <ul class="list contacts__list">
-          <li class="contacts__list-item">
-            <p class="contacts-kind">Addrese</p>
-            <address>
-              <p>Odin Eiendom</p>
-              <p>Lunderingen 1</p>
-              <p>3941 Porsgrunn</p>
-              <a href="" class="contacts-link">Kart</a>
-            </address>
-          </li>
-          <li class="contacts__list-item">
-            <p class="contacts-kind">Mail</p>
-            <a href="malito:kontakt@odinedom.no" class="contacts-link"
-              >kontakt@odinedom.no</a
-            >
-          </li>
-          <li class="contacts__list-item">
-            <p class="contacts-kind">Telefon</p>
-            <p>Ma - fre 10-16</p>
-            <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
-          </li>
-        </ul>
-      </div>
-      <div class="contacts-persons">
-        <ul class="persons-list">
-          <li class="persons-item">
-            <img src="./img/person1.png" alt="man" />
-            <p class="persons-name">Kristoffer Moen</p>
-            <p>Innehaver/Daglig Leder</p>
-            <ul>
-              <li class="persons-phone">
-                <a href="" class="accent-border contacts-link">35 93 10 20</a>
-              </li>
-              <li>
-                <a href="" class="accent-border contacs-link"
-                  >Kristoffer@odin-eiendom.no</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="persons-item">
-            <img src="./img/person2.jpg" alt="man" />
-            <p class="persons-name">Kristoffer Moen</p>
-            <p>Innehaver/Daglig Leder</p>
-            <ul>
-              <li class="persons-phone">
-                <a href="" class="accent-border contacts-link">35 93 10 20</a>
-              </li>
-              <li>
-                <a href="" class="accent-border contacts-link"
-                  >Kristoffer@odin-eiendom.no</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="contacts__form">
-        <form action="" class="form">
-          <h3 class="contacts__form-title">Kontaktskjema</h3>
-          <div class="contacts__form-formfield">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="contacts__form-formfield_input"
-            />
-            <label for="name" class="contacts__form-formfield_label"
-              >Navn</label
-            >
-          </div>
-          <div class="contacts__form-formfield">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="contacts__form-formfield_input"
-            />
-            
-            <label for="email" class="contacts__form-formfield_label contacts__form-label_mail"
-              >Epost <svg class="smile-svg" width="20" height="27">
-                <use href="./svg/symbol-defs.svg#form-smile"></use>
-              </svg> </label
-            >
-            
-          </div>
-          
-          <div class="contacts__form-formfield">
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              class="contacts__form-formfield_input"
-            />
-            <label for="tel" class="contacts__form-formfield_label"
-              >Mobil</label
-            >
-          </div>
-
-          <div class="contacts__form-formfield contacts__form-message">
-            <textarea
-              name="message"
-              id="message"
-              rows="1"
-              class="contacts__form-text_input"
-            ></textarea>
-            <label for="message" class="contacts__form-text_label"
-              >Melding</label
-            >
-          </div>
-
-          <div class="contacts__form-consent">
-            <input
-              class="styled-checkbox"
-              id="styled-checkbox-1"
-              type="checkbox"
-              value="value1"
-            />
-            <label for="styled-checkbox-1">Consent</label>
-          </div>
-
-          <button class="description-button contacts__form-button main-button">
-            Send melding
-            <svg class="arrow-svg" width="26" height="19">
-              <use href="./svg/symbol-defs.svg#arrow"></use>
+          <button
+            type="button"
+            class="menu-button js-menu-button"
+            aria-controls="nav-menu"
+          >
+            <svg width="45" height="45">
+              <use
+                href="./svg/symbol-defs.svg#menu-button"
+                class="icon-burger"
+              ></use>
+              <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
             </svg>
           </button>
-        </form>
-      </div>
 
-      <div class="partners contacts__partners">
-        <h3>Våre Samarbeidspartnere</h3>
-        <ul class="partners__list">
-          <li class="partner-item">
-            <a href=""><img src="./img/partner1.png" alt="wexels" /></a>
-          </li>
-          <li class="partner-item">
-            <a href=""><img src="./img/partner2.png" alt="maxbo" /></a>
-          </li>
-          <li class="partner-item">
-            <a href=""><img src="./img/partner3.png" alt="pbbl" /></a>
-          </li>
-          <li class="partner-item">
-            <a href=""><img src="./img/partner4.png" alt="asplan viak" /></a>
-          </li>
-        </ul>
+          <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
+            <li class="nav-item">
+              <a href="./projects.html" class="nav-project nav-link"
+                >Prosjekter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-about nav-link">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a href="./news.html" class="nav-news nav-link">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="./contacts.html"
+                class="nav-contacts nav-link accent-border"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <h1 class="main-title conteiner">Kontakt</h1>
       </div>
-    </div>
-    <footer class="conteiner">
-      <div class="footer__conteiner">
-        <h2 class="second-title">Kontaktinformasjon</h2>
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Addrese</p>
-            <address>
-              <p>Odin Eiendom</p>
-              <p>Lunderingen 1</p>
-              <p>3941 Porsgrunn</p>
-              <a href="" class="contacts-link">Kart</a>
-            </address>
-          </li>
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Telefon</p>
-            <p>Ma - fre 10-16</p>
-            <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
-          </li>
-          <li class="contacts-item">
-            <p class="footer__contacts-kind">Mail</p>
-            <a href="malito:kontakt@odinedom.no" class="contacts-link"
-              >kontakt@odinedom.no</a
+      <div class="conteiner contacts-conteiner">
+        <div class="contacts">
+          <ul class="list contacts__list">
+            <li class="contacts__list-item">
+              <p class="contacts-kind">Addrese</p>
+              <address>
+                <p>Odin Eiendom</p>
+                <p>Lunderingen 1</p>
+                <p>3941 Porsgrunn</p>
+                <a href="" class="contacts-link">Kart</a>
+              </address>
+            </li>
+            <li class="contacts__list-item">
+              <p class="contacts-kind">Mail</p>
+              <a href="malito:kontakt@odinedom.no" class="contacts-link"
+                >kontakt@odinedom.no</a
+              >
+            </li>
+            <li class="contacts__list-item">
+              <p class="contacts-kind">Telefon</p>
+              <p>Ma - fre 10-16</p>
+              <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-persons">
+          <ul class="persons-list">
+            <li class="persons-item">
+              <img src="./img/person1.png" alt="man" />
+              <p class="persons-name">Kristoffer Moen</p>
+              <p>Innehaver/Daglig Leder</p>
+              <ul>
+                <li class="persons-phone">
+                  <a href="" class="accent-border contacts-link">35 93 10 20</a>
+                </li>
+                <li>
+                  <a href="" class="accent-border contacs-link"
+                    >Kristoffer@odin-eiendom.no</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="persons-item">
+              <img src="./img/person2.jpg" alt="man" />
+              <p class="persons-name">Kristoffer Moen</p>
+              <p>Innehaver/Daglig Leder</p>
+              <ul>
+                <li class="persons-phone">
+                  <a href="" class="accent-border contacts-link">35 93 10 20</a>
+                </li>
+                <li>
+                  <a href="" class="accent-border contacts-link"
+                    >Kristoffer@odin-eiendom.no</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__form">
+          <form action="" class="form">
+            <h3 class="contacts__form-title">Kontaktskjema</h3>
+            <div class="contacts__form-formfield">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="contacts__form-formfield_input"
+              />
+              <label for="name" class="contacts__form-formfield_label"
+                >Navn</label
+              >
+            </div>
+            <div class="contacts__form-formfield">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contacts__form-formfield_input"
+              />
+
+              <label
+                for="email"
+                class="contacts__form-formfield_label contacts__form-label_mail"
+                >Epost
+                <svg class="smile-svg" width="20" height="27">
+                  <use href="./svg/symbol-defs.svg#form-smile"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="contacts__form-formfield">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="contacts__form-formfield_input"
+              />
+              <label for="tel" class="contacts__form-formfield_label"
+                >Mobil</label
+              >
+            </div>
+
+            <div class="contacts__form-formfield contacts__form-message">
+              <textarea
+                name="message"
+                id="message"
+                rows="1"
+                class="contacts__form-text_input"
+              ></textarea>
+              <label for="message" class="contacts__form-text_label"
+                >Melding</label
+              >
+            </div>
+
+            <div class="contacts__form-consent">
+              <input
+                class="styled-checkbox"
+                id="styled-checkbox-1"
+                type="checkbox"
+                value="value1"
+              />
+              <label for="styled-checkbox-1">Consent</label>
+            </div>
+
+            <button
+              class="description-button contacts__form-button main-button"
             >
-          </li>
-        </ul>
-        <div class="copyright">
-          <p class="copyrigth-paragraph">
-            Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
-          </p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
-              ></a>
+              Send melding
+              <svg class="arrow-svg" width="26" height="19">
+                <use href="./svg/symbol-defs.svg#arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="partners contacts__partners">
+          <h3>Våre Samarbeidspartnere</h3>
+          <ul class="partners__list">
+            <li class="partner-item">
+              <a href=""><img src="./img/partner1.png" alt="wexels" /></a>
             </li>
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#linkedin"></use></svg
-              ></a>
+            <li class="partner-item">
+              <a href=""><img src="./img/partner2.png" alt="maxbo" /></a>
             </li>
-            <li class="social-item">
-              <a href=""
-                ><svg class="social-svg" width="21" height="33">
-                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
-              ></a>
+            <li class="partner-item">
+              <a href=""><img src="./img/partner3.png" alt="pbbl" /></a>
+            </li>
+            <li class="partner-item">
+              <a href=""><img src="./img/partner4.png" alt="asplan viak" /></a>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
+      <footer class="conteiner">
+        <div class="footer__conteiner">
+          <h2 class="second-title">Kontaktinformasjon</h2>
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Addrese</p>
+              <address>
+                <p>Odin Eiendom</p>
+                <p>Lunderingen 1</p>
+                <p>3941 Porsgrunn</p>
+                <a href="" class="contacts-link">Kart</a>
+              </address>
+            </li>
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Telefon</p>
+              <p>Ma - fre 10-16</p>
+              <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
+            </li>
+            <li class="contacts-item">
+              <p class="footer__contacts-kind">Mail</p>
+              <a href="malito:kontakt@odinedom.no" class="contacts-link"
+                >kontakt@odinedom.no</a
+              >
+            </li>
+          </ul>
+          <div class="copyright">
+            <p class="copyrigth-paragraph">
+              Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
+            </p>
+            <ul class="social-list list">
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#linkedin"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a href=""
+                  ><svg class="social-svg" width="21" height="33">
+                    <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="./js/menuButton.js"></script>
   </body>
 </html>
