@@ -1,4 +1,3 @@
-
 .header {
   z-index: 2;
 
@@ -8,13 +7,13 @@
 
   background-color: #fff;
 }
-@media screen and (max-width: 767px){
-  .header{
+@media screen and (max-width: 767px) {
+  .header {
     position: relative;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .header {
     position: fixed;
   }
@@ -27,7 +26,6 @@
 }
 
 .header-conteiner {
-
   display: flex;
   height: 100%;
 }
@@ -49,11 +47,10 @@
   }
 }
 
-
 .menu-button {
   position: absolute;
   top: 0;
-    right: 0;
+  right: 0;
   z-index: 1;
   width: 110px;
   height: 110px;
@@ -65,8 +62,28 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-}
+  .lines-cross {
+    margin-left: 35px;
+    margin-bottom: 18px;
+  }
+  .line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #000;
+  }
 
+  .line:first-child {
+    margin-bottom: 9px;
+  }
+
+  transition: transform 1000ms linear;
+
+  &.is-open .line {
+    background-color: #087313;
+    transform: rotate(50%);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -76,52 +93,60 @@
 
 .menu-button > svg {
   position: absolute;
-    top: 26px;
-    right: 26px;
+  top: 26px;
+  right: 26px;
 }
 
 .icon-cross {
   display: none;
 }
 
-.is-open .icon-cross{
+.is-open .icon-cross {
   display: block;
 }
 
-.is-open .icon-burger{
+.is-open .icon-burger {
   display: none;
 }
 
 .nav-list {
   margin-left: auto;
 }
-@media screen and (max-width:767px){
-  .nav-list{
+@media screen and (max-width: 767px) {
+  .nav-list {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 100%;
+
+    min-height: 100vh;
     padding: 137px 40px;
     width: 65%;
-    
+
     background-color: #fff;
 
-  
-    // opacity: 0;
-    // pointer-events: none;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // min-height: 100vh;
+    // padding: 137px 40px;
+    // width: 65%;
 
-    &.is-hidden{
+    // background-color: #fff;
+    transform: translateX(0);
+
+    transition: transform 250ms linear;
+
+    &.is-hidden {
       opacity: 0;
       pointer-events: none;
+
+      transform: translateX(-400px);
     }
   }
-
-
-
-
 }
-@media screen and (min-width: 768px){
-  .nav-list{
+@media screen and (min-width: 768px) {
+  .nav-list {
     display: flex;
   }
 }
@@ -138,29 +163,26 @@
   margin-right: 37px;
 }
 
-.nav-link{
+.nav-link {
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
-height: 20px;
-overflow: hidden;
-  color: #FFF;
-
+  height: 20px;
+  overflow: hidden;
+  color: #fff;
 }
-
 
 // ANIMATION
 
-.nav-project::before{
+.nav-project::before {
   content: "Prosjekter";
   display: inline-block;
   color: #000;
   position: absolute;
   transition: transform 100ms linear;
-
 }
 
-.nav-project::after{
+.nav-project::after {
   content: "Prosjekter";
   display: inline-block;
   color: #087313;
@@ -169,7 +191,7 @@ overflow: hidden;
   top: 100%;
   transition: transform 100ms linear;
 }
-.nav-about::before{
+.nav-about::before {
   content: "Om oss";
   display: inline-block;
   color: #000;
@@ -177,7 +199,7 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-about::after{
+.nav-about::after {
   content: "Om oss";
   display: inline-block;
   color: #087313;
@@ -187,7 +209,7 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-news::before{
+.nav-news::before {
   content: "Nyheter";
   display: inline-block;
   color: #000;
@@ -195,7 +217,7 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-news::after{
+.nav-news::after {
   content: "Nyheter";
   display: inline-block;
   color: #087313;
@@ -205,7 +227,7 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-contacts::before{
+.nav-contacts::before {
   content: "Kontakt";
   display: inline-block;
   color: #000;
@@ -213,7 +235,7 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-contacts::after{
+.nav-contacts::after {
   content: "Kontakt";
   display: inline-block;
   color: #087313;
@@ -223,14 +245,13 @@ overflow: hidden;
   transition: transform 100ms linear;
 }
 
-.nav-project:hover::before, 
+.nav-project:hover::before,
 .nav-project:hover::after,
 .nav-about:hover::before,
 .nav-about:hover::after,
 .nav-news:hover::before,
 .nav-news:hover::after,
 .nav-contacts:hover::before,
-.nav-contacts:hover::after{
+.nav-contacts:hover::after {
   transform: translateY(-100%);
 }
-
