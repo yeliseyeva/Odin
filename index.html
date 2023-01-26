@@ -36,29 +36,27 @@
           >
             <div class="lines-cross">
               <span class="line"></span>
-            <span class="line"></span>
+              <span class="line"></span>
             </div>
           </button>
 
           <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
-            <div class="test">
-              <li class="nav-item">
-                <a href="./projects.html" class="nav-project nav-link"
-                  >Prosjekter</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="./about.html" class="nav-about nav-link">Om oss</a>
-              </li>
-              <li class="nav-item">
-                <a href="./news.html" class="nav-news nav-link">Nyheter</a>
-              </li>
-              <li class="nav-item">
-                <a href="./contacts.html" class="nav-contacts nav-link"
-                  >Kontakt</a
-                >
-              </li>
-            </div>
+            <li class="nav-item">
+              <a href="./projects.html" class="nav-project nav-link"
+                >Prosjekter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-about nav-link">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a href="./news.html" class="nav-news nav-link">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacts.html" class="nav-contacts nav-link"
+                >Kontakt</a
+              >
+            </li>
           </ul>
         </div>
       </header>
@@ -146,12 +144,19 @@
             </a>
           </li>
         </ul>
-        <button tabindex="button" class="main-button">
+        <!-- <button tabindex="button" class="main-button">
           Se alle prosjekter
           <svg class="arrow-svg" width="26" height="19">
             <use href="./svg/symbol-defs.svg#arrow"></use>
           </svg>
-        </button>
+        </button> -->
+
+        <a href="./projects.html" class="main-button">
+          <span>Se alle prosjekter</span>
+          <svg class="arrow-svg" width="26" height="19">
+            <use href="./svg/symbol-defs.svg#arrow"></use>
+          </svg>
+        </a>
       </div>
 
       <div class="conteiner news-conteiner">
@@ -260,12 +265,13 @@
             </a>
           </li>
         </ul>
-        <button class="main-button" type="button">
-          Se alle nyheter
+        <a href="./news.html" class="main-button">
+          <span>Se alle nyheter</span>
           <svg class="arrow-svg" width="26" height="19">
             <use href="./svg/symbol-defs.svg#arrow"></use>
           </svg>
-        </button>
+          </span>
+        </a>
 
         <div class="cookies visually-hidden">
           <div class="cookies__conteiner">

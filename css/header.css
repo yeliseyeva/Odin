@@ -54,7 +54,6 @@
   background-image: url("../../img/elipse.png");
   background-repeat: no-repeat;
   background-size: contain;
-  transition: transform 1000ms linear;
 }
 .menu-button .lines-cross {
   margin-left: 35px;
@@ -65,13 +64,17 @@
   width: 45px;
   height: 3px;
   background-color: #000;
+  transition: transform 250ms linear;
 }
 .menu-button .line:first-child {
   margin-bottom: 9px;
 }
-.menu-button.is-open .line {
-  background-color: #087313;
-  transform: rotate(50%);
+.menu-button.is-open .line:first-child {
+  margin-bottom: -3px;
+  transform: rotate(-45deg);
+}
+.menu-button.is-open .line:last-child {
+  transform: rotate(45deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -103,18 +106,16 @@
 
 @media screen and (max-width: 767px) {
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-height: 100vh;
     padding: 137px 40px;
     width: 65%;
     background-color: #fff;
-    transform: translateX(0);
     transition: transform 250ms linear;
   }
   .nav-list.is-hidden {
-    opacity: 0;
     pointer-events: none;
     transform: translateX(-400px);
   }

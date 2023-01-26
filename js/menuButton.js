@@ -7,7 +7,7 @@ function test(){
  refs.menuButton.addEventListener("click", () => {
     refs.menuButton.classList.toggle("is-open")
     refs.menu.classList.toggle("is-hidden")
-    // refs.menu.classList.toggle("is-open")
+    refs.menu.classList.toggle("is-open")
  })
  
 }

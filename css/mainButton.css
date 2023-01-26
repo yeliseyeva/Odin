@@ -1,16 +1,26 @@
 .main-button {
-  display: block;
+  display: flex;
   margin: auto;
   width: 272px;
   height: 52px;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #087313;
   border-radius: 60px;
   background-color: inherit;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1;
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear, fill 250ms linear;
+}
+.main-button .arrow-svg {
+  margin-left: 10px;
+}
+.main-button .arrow {
+  width: 30px;
+  height: 3px;
+  background-color: #087313;
 }
 
 .main-button:hover,

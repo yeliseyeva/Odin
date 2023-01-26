@@ -24,13 +24,10 @@
             class="menu-button js-menu-button"
             aria-controls="nav-menu"
           >
-            <svg width="45" height="45">
-              <use
-                href="./svg/symbol-defs.svg#menu-button"
-                class="icon-burger"
-              ></use>
-              <use href="./svg/symbol-defs.svg#cross" class="icon-cross"></use>
-            </svg>
+            <div class="lines-cross">
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </button>
   
           <ul class="nav-list list js-nav-list is-hidden" id="nav-menu">
@@ -255,110 +252,112 @@
         </div>
   
         </div> -->
-      </div>
-  
-      <div class="backdrop">
-        <button class="close">
-          <svg class="close-svg" width="21" height="33">
-            <use href="./svg/symbol-defs.svg#close"></use>
-          </svg>
-        </button>
-        <div class="conteiner">
-          <div class="carousel">
-            <div id="slider-wrapper">
-              <input
-                type="radio"
-                id="button-1"
-                name="buttons"
-                checked="checked"
-              />
-              <label for="button-1"></label>
-              <input type="radio" id="button-2" name="buttons" />
-              <label for="button-2"></label>
-              <input type="radio" id="button-3" name="buttons" />
-              <label for="button-3"></label>
-              <input type="radio" id="button-4" name="buttons" />
-              <label for="button-4"></label>
-              <input type="radio" id="button-5" name="buttons" />
-              <label for="button-5"></label>
-  
-              <div id="slider">
-                <ul>
-                  <li id="slide1">
-                    <img src="./img/carouselPhoto1.png" alt="house" />
-                  </li>
-                  <li id="slide2">
-                    <img src="./img/carouselPhoto1.png" alt="house" />
-                  </li>
-                  <li id="slide3">
-                    <img src="./img/carouselPhoto1.png" alt="house" />
-                  </li>
-                  <li id="slide4">
-                    <img src="./img/carouselPhoto1.png" alt="house" />
-                  </li>
-                  <li id="slide5">
-                    <img src="./img/carouselPhoto1.png" alt="house" />
-                  </li>
-                </ul>
+
+        <div class="backdrop">
+          <button class="close">
+            <svg class="close-svg" width="21" height="33">
+              <use href="./svg/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+          <div class="conteiner">
+            <div class="carousel">
+              <div id="slider-wrapper">
+                <input
+                  type="radio"
+                  id="button-1"
+                  name="buttons"
+                  checked="checked"
+                />
+                <label for="button-1"></label>
+                <input type="radio" id="button-2" name="buttons" />
+                <label for="button-2"></label>
+                <input type="radio" id="button-3" name="buttons" />
+                <label for="button-3"></label>
+                <input type="radio" id="button-4" name="buttons" />
+                <label for="button-4"></label>
+                <input type="radio" id="button-5" name="buttons" />
+                <label for="button-5"></label>
+    
+                <div id="slider">
+                  <ul>
+                    <li id="slide1">
+                      <img src="./img/carouselPhoto1.png" alt="house" />
+                    </li>
+                    <li id="slide2">
+                      <img src="./img/carouselPhoto1.png" alt="house" />
+                    </li>
+                    <li id="slide3">
+                      <img src="./img/carouselPhoto1.png" alt="house" />
+                    </li>
+                    <li id="slide4">
+                      <img src="./img/carouselPhoto1.png" alt="house" />
+                    </li>
+                    <li id="slide5">
+                      <img src="./img/carouselPhoto1.png" alt="house" />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  
-      <footer class="conteiner">
-        <div class="footer__conteiner">
-          <h2 class="second-title">Kontaktinformasjon</h2>
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <p class="footer__contacts-kind">Addrese</p>
-              <address>
-                <p>Odin Eiendom</p>
-                <p>Lunderingen 1</p>
-                <p>3941 Porsgrunn</p>
-                <a href="" class="contacts-link">Kart</a>
-              </address>
-            </li>
-            <li class="contacts-item">
-              <p class="footer__contacts-kind">Telefon</p>
-              <p>Ma - fre 10-16</p>
-              <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
-            </li>
-            <li class="contacts-item">
-              <p class="footer__contacts-kind">Mail</p>
-              <a href="malito:kontakt@odinedom.no" class="contacts-link"
-                >kontakt@odinedom.no</a
-              >
-            </li>
-          </ul>
-          <div class="copyright">
-            <p class="copyrigth-paragraph">
-              Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
-            </p>
-            <ul class="social-list list">
-              <li class="social-item">
-                <a href=""
-                  ><svg class="social-svg" width="21" height="33">
-                    <use href="./svg/symbol-defs.svg#facebook"></use></svg
-                ></a>
+    
+        <footer class="conteiner">
+          <div class="footer__conteiner">
+            <h2 class="second-title">Kontaktinformasjon</h2>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <p class="footer__contacts-kind">Addrese</p>
+                <address>
+                  <p>Odin Eiendom</p>
+                  <p>Lunderingen 1</p>
+                  <p>3941 Porsgrunn</p>
+                  <a href="" class="contacts-link">Kart</a>
+                </address>
               </li>
-              <li class="social-item">
-                <a href=""
-                  ><svg class="social-svg" width="21" height="33">
-                    <use href="./svg/symbol-defs.svg#linkedin"></use></svg
-                ></a>
+              <li class="contacts-item">
+                <p class="footer__contacts-kind">Telefon</p>
+                <p>Ma - fre 10-16</p>
+                <a href="tel:45636260" class="contacts-link">45 63 62 60</a>
               </li>
-              <li class="social-item">
-                <a href=""
-                  ><svg class="social-svg" width="21" height="33">
-                    <use href="./svg/symbol-defs.svg#instagram"></use></svg
-                ></a>
+              <li class="contacts-item">
+                <p class="footer__contacts-kind">Mail</p>
+                <a href="malito:kontakt@odinedom.no" class="contacts-link"
+                  >kontakt@odinedom.no</a
+                >
               </li>
             </ul>
+            <div class="copyright">
+              <p class="copyrigth-paragraph">
+                Copyright 2021 © Moen Eiendom - <span>Org nr: 918712267</span>
+              </p>
+              <ul class="social-list list">
+                <li class="social-item">
+                  <a href=""
+                    ><svg class="social-svg" width="21" height="33">
+                      <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a href=""
+                    ><svg class="social-svg" width="21" height="33">
+                      <use href="./svg/symbol-defs.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a href=""
+                    ><svg class="social-svg" width="21" height="33">
+                      <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+      </div>
+  
+      
     <script src="./js/menuButton.js"></script>
     <script src="./js/carousel.js"></script>
   </body>

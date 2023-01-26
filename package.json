@@ -1,0 +1,23 @@
+{
+  "name": "odin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliseyeva/Odin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeliseyeva/Odin/issues"
+  },
+  "homepage": "https://github.com/yeliseyeva/Odin#readme",
+  "dependencies": {
+    "swiper": "^8.4.6"
+  }
+}
