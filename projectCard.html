@@ -51,7 +51,29 @@
   
       <div class="options-conteiner">
         <div class="conteiner">
-          <div class="carousel-container">
+          <div class="swiper-conteiner">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="./img/carouselPhoto1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="./img/about-apartment.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="./img/about-house.png" />
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="width: 70px; height: 70px; background-color: #fff; border-radius: 50%; top: 45%; left: -35px; z-index: 1;"></div>
+            <div class="swiper-button-next" style="width: 70px; height: 70px; background-color: #fff; border-radius: 50%; top: 45%; right: -35px; z-index: 1;"></div>
+
+            <div class="swiper-pagination" style="text-align: end;"></div>
+          </div>
+          <!-- <div class="carousel-container">
             <div class="carousel-imgs">
               <img src="./img/carouselPhoto1.png" class="carousel-img visible" />
               <img src="./img/about-apartment.png" class="carousel-img hidden" />
@@ -64,7 +86,7 @@
             <p class="carousel-caption visible">1/3</p>
             <p class="carousel-caption hidden">2/3</p>
             <p class="carousel-caption hidden">3/3</p>
-          </div>
+          </div> -->
           <h1 class="main-title project__card-title">
             Tollskogvegen II – Porsgrunn
           </h1>

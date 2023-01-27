@@ -2,6 +2,7 @@ import "./js/menuButton";
 import "./js/switchButton";
 // import "./js/carousel";
 import "./js/swiper"
+import "./js/counter"
 
 
 
