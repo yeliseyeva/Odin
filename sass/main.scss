@@ -1,9 +1,3 @@
-//swiper
-// import styles bundle
-// @import 'swiper/css/bundle';
-@import "../node_modules/swiper/swiper-bundle.css";
-
-
 // base
 @import "./base.scss";
 @import "./body.scss";
@@ -36,3 +30,7 @@
 @import "./newsPage/newsCard.scss";
 @import "./about/about.scss";
 @import "./cookies.scss";
+
+// Swiper
+
+@import "./swiper.scss"

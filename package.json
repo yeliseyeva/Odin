@@ -1,22 +1,17 @@
 {
-  "name": "odin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "odineiendom",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yeliseyeva/Odin.git"
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "vite": "^4.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yeliseyeva/Odin/issues"
-  },
-  "homepage": "https://github.com/yeliseyeva/Odin#readme",
   "dependencies": {
     "swiper": "^8.4.6"
   }

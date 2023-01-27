@@ -1,10 +1,10 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper/bundle';
 
-Swiper.use([Navigation, Pagination])
+  // import styles bundle
+  import 'swiper/css/bundle';
 
-
-// init Swiper:
-const swiper = new Swiper('.swiper', {
+  // init Swiper:
+  const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: true,

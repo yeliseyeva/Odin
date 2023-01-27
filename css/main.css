@@ -1,4 +1,3 @@
-@import "../node_modules/swiper/swiper-bundle.css";
 body {
   margin: 0;
 }
@@ -1616,4 +1615,9 @@ textarea:focus {
 
 .cookies__button-reject {
   border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.swiper {
+  width: 100%;
+  height: 589px;
 }/*# sourceMappingURL=main.css.map */
