@@ -21,6 +21,23 @@
   color: #007B25;
 }
 
+#prev, #next {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 45%;
+  z-index: 1;
+}
+
+#prev {
+  left: -35px;
+}
+
+#next {
+  right: -35px;
+}
+
 @media screen and (max-width: 767px) {
   .swiper {
     width: 100%;
@@ -34,6 +51,12 @@
   }
   .swiper-button-prev,
 .swiper-button-next {
+    display: none;
+  }
+  #prev {
+    display: none;
+  }
+  #next {
     display: none;
   }
 }
