@@ -822,13 +822,12 @@ button {
 }
 
 .options-paragraph {
-  margin-bottom: 46px;
   grid-area: 2/2/4/2;
   font-size: 32px;
 }
 
 .options-list {
-  padding: 31px 25px;
+  box-sizing: border-box;
   background-color: #fed6b8;
   border-radius: 20px;
 }
@@ -939,6 +938,7 @@ button {
   }
   .options-list {
     margin-top: -35%;
+    padding: 31px 25px;
   }
   .table-items {
     display: flex;
@@ -979,7 +979,7 @@ button {
   .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin-top: 23px;
     row-gap: 20px;
   }
@@ -1001,35 +1001,13 @@ button {
 }
 .line-container {
   position: relative;
-  grid-area: 1/1/1/3;
-  margin-top: 30vh;
-  display: flex;
-  width: 100%;
-  padding-bottom: 100px;
 }
-.line-container .progress-line {
+
+.status {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: space-around;
-}
-.line-container .progress-line::after {
-  content: "";
-  position: absolute;
-  height: 1.5px;
-  width: 38%;
-  background: #000;
-  left: 0;
-}
-.line-container .status {
-  position: relative;
-  top: -9.5px;
   z-index: 1;
 }
-.line-container .status .dot {
+.status .dot {
   display: flex;
   width: 18px;
   height: 18px;
@@ -1037,7 +1015,7 @@ button {
   border: 2px solid #000;
   background-color: #faeee5;
 }
-.line-container .status .dot .started {
+.status .dot .dot-finished {
   display: block;
   margin: auto;
   width: 10px;
@@ -1045,36 +1023,128 @@ button {
   border-radius: 50%;
   background-color: #000;
 }
-.line-container .status .dot.current {
+.status .dot.current {
   background: #000;
 }
-.line-container .status .dot.completed {
+.status .dot.in-progress {
   position: relative;
   background: #000;
 }
 
 .progress__date-list {
   position: absolute;
-  top: 25px;
-  left: 40px;
   display: flex;
-  justify-content: space-around;
-  width: calc(100% - 80px);
+  font-size: 20px;
 }
 .progress__date-list .progress__date-item {
-  text-align: center;
+  width: 200px;
 }
 .progress__date-list .progress__date-item span:first-child {
   margin-bottom: 4px;
+  font-size: 14px;
 }
 .progress__date-list .progress__date-item span {
   display: block;
 }
 
-.progress-text {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .line-container {
+    margin-top: 53px;
+    padding-left: 65px;
+  }
+  .line-container .progress-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1px;
+    height: 400px;
+    border-left: 1px dashed rgba(0, 0, 0, 0.5);
+  }
+  .line-container .progress-line-active {
+    position: absolute;
+    width: 1.5px;
+    height: 37.5%;
+    background: #000;
+    top: 0;
+    left: 65px;
+  }
+  .line-container .status {
+    left: -11px;
+  }
+  .progress__date-list {
+    top: 0;
+    left: 120px;
+    height: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(100% - 80px);
+    font-size: 20px;
+  }
+  .progress__date-list .progress__date-item {
+    width: 200px;
+  }
+  .progress__date-list .progress__date-item span:first-child {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  .progress__date-list .progress__date-item span {
+    display: block;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .line-container {
+    grid-area: 1/1/1/3;
+    margin-top: 240px;
+    display: flex;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .line-container .progress-line {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+  }
+  .line-container .progress-line-active {
+    position: absolute;
+    height: 1.5px;
+    background: #000;
+    left: 0;
+  }
+  .line-container .progress-line-active.length-1 {
+    width: 12.5%;
+  }
+  .line-container .progress-line-active.length-2 {
+    width: 37.5%;
+  }
+  .line-container .progress-line-active.length-3 {
+    width: 62.5%;
+  }
+  .line-container .progress-line-active.length-4 {
+    width: 100%;
+  }
+  .line-container .status {
+    top: -9.5px;
+  }
+  .progress__date-list {
+    top: 25px;
+    left: 40px;
+    justify-content: space-around;
+    width: calc(100% - 80px);
+  }
+  .progress__date-list .progress__date-item {
+    text-align: center;
+  }
+  .progress__date-list .progress__date-item span:first-child {
+    margin-bottom: 4px;
+  }
+  .progress__date-list .progress__date-item span {
+    display: block;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
