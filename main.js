@@ -33,29 +33,35 @@ import "./js/counter"
 const statuses = document.querySelectorAll(".status")
 const actives = document.querySelectorAll (".progress-active");
 const progressLine = document.querySelector(".progress-line-active")
+const finishedDot = document.querySelectorAll(".finished-js")
+const dots = document.querySelectorAll(".dot")
 
 function progress ( ){
     let length = statuses.length
 
-    let width = 1200/length/2
-    console.log(width)
-    if (statuses[0].className.includes("active")){
-        progressLine.style.width = `${width}px`
-                //  progressLine.classList.add("length-1")
-             } else if (statuses[1].className.includes("active")){
-                // progressLine.classList.add("length-2")
-             } else if (statuses[2].className.includes("active")) {
-                // progressLine.classList.add("length-3")
-                progressLine.style.width="200px"
-             } 
+    let fullWidth = 1200
+    let firstWidth = fullWidth/length/2
+    let secondWidth = firstWidth + fullWidth/length
+    let thirdWidth = firstWidth + fullWidth/length*2
+    let fourhWidth = firstWidth + fullWidth/length*3
+    
+
+
+               if (statuses[0].className.includes("active")){
+                  progressLine.style.width = `${firstWidth}px`
+                  dots[0].classList.add("in-progress")
+               } else if (statuses[1].className.includes("active")){
+                  progressLine.style.width = `${secondWidth}px`
+                  dots[1].classList.add("in-progress")
+               } else if (statuses[2].className.includes("active")) {
+                  progressLine.style.width = `${thirdWidth}px`
+                  dots[2].classList.add("in-progress")
+               } else if (statuses[3].className.includes("active")) {
+                  progressLine.style.width = `${fourhWidth}px`
+                  dots[3].classList.add("in-progress")
+               } else if (statuses[3].className.includes("finished")) {
+                  progressLine.style.width = `${fullWidth}px`
+               }
 }
 
 progress()
-
-// const progressLineActive = document.querySelector(".progress-line-active")
-
-// function length () {
-//     if (dots.dot1.className.includes("finished")){
-//         progressLineActive.className = "w-1"
-//     }
-// }
