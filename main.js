@@ -29,39 +29,59 @@ import "./js/counter"
 
 // setupCounter(document.querySelector('#counter'))
 
-
+const lineConteiner = document.querySelector(".line-container")
 const statuses = document.querySelectorAll(".status")
 const actives = document.querySelectorAll (".progress-active");
 const progressLine = document.querySelector(".progress-line-active")
 const finishedDot = document.querySelectorAll(".finished-js")
 const dots = document.querySelectorAll(".dot")
 
-function progress ( ){
-    let length = statuses.length
+lineConteiner.addEventListener("click", progress)
 
-    let fullWidth = 1200
-    let firstWidth = fullWidth/length/2
-    let secondWidth = firstWidth + fullWidth/length
-    let thirdWidth = firstWidth + fullWidth/length*2
-    let fourhWidth = firstWidth + fullWidth/length*3
-    
+function progress (evt) {
+      if (!evt.target.classList.contains("dot")) {
+         return
+      }
 
+      const currentProgressEl = document.querySelector(".dot.in-progress")
 
-               if (statuses[0].className.includes("active")){
-                  progressLine.style.width = `${firstWidth}px`
-                  dots[0].classList.add("in-progress")
-               } else if (statuses[1].className.includes("active")){
-                  progressLine.style.width = `${secondWidth}px`
-                  dots[1].classList.add("in-progress")
-               } else if (statuses[2].className.includes("active")) {
-                  progressLine.style.width = `${thirdWidth}px`
-                  dots[2].classList.add("in-progress")
-               } else if (statuses[3].className.includes("active")) {
-                  progressLine.style.width = `${fourhWidth}px`
-                  dots[3].classList.add("in-progress")
-               } else if (statuses[3].className.includes("finished")) {
-                  progressLine.style.width = `${fullWidth}px`
-               }
+      if (currentProgressEl) {
+         currentProgressEl.classList.remove("in-progress")
+      }
+
+      evt.target.classList.add("in-progress")
+
+      test()
 }
 
-progress()
+function test() {
+   let length = statuses.length
+
+         let fullWidth = 1200
+         let firstWidth = fullWidth/length/2
+         let secondWidth = firstWidth + fullWidth/length
+         let thirdWidth = firstWidth + fullWidth/length*2
+         let fourhWidth = firstWidth + fullWidth/length*3
+    
+          if (dots[0].className.includes("in-progress")){
+             progressLine.style.width = `${firstWidth}px`
+          } else if (dots[1].className.includes("in-progress")){
+             progressLine.style.width = `${secondWidth}px`
+          } else if (dots[2].className.includes("in-progress")) {
+             progressLine.style.width = `${thirdWidth}px`
+          } else if (dots[3].className.includes("in-progress")) {
+             progressLine.style.width = `${fourhWidth}px`
+          } else if (dots[3].className.includes("finished")) {
+             progressLine.style.width = `${fullWidth}px`
+          }
+
+      for (let i = 0; i < dots.length; i++) {
+         if (!dots[i].className.includes("in-progress")) {
+             dots[i].querySelector(".finished-js").classList.add("dot-finished")
+          } else {
+            break
+         }
+      }
+}
+
+test()
