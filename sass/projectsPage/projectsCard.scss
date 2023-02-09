@@ -322,10 +322,22 @@
     .progress-line-active{
       position: absolute;
         width: 1.5px;
-        height: calc(100%/4/2 + 100%/4);
         background: #000;
         top: 0;
         left: 65px;
+
+        &.length-1{
+          height: calc(100%/4/2);
+        }
+        &.length-2{
+          height: calc(100%/4/2 + 100%/4);
+        }
+        &.length-3{
+          height: calc(100%/4/2 + 100%/4*2);
+        }
+        &.length-4{
+          height: 100%
+        }
     }
 
     .status {
@@ -340,7 +352,7 @@
 
     flex-wrap: wrap;
     align-items: center;
-    width: calc(100% - 80px);
+    width: calc(100% - 120px);
     font-size: 20px;
 
     .progress__date-item {

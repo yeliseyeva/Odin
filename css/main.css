@@ -760,7 +760,6 @@ button {
   border-radius: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background-color: #fff;
   border-color: #fff;
@@ -1063,10 +1062,21 @@ button {
   .line-container .progress-line-active {
     position: absolute;
     width: 1.5px;
-    height: 37.5%;
     background: #000;
     top: 0;
     left: 65px;
+  }
+  .line-container .progress-line-active.length-1 {
+    height: 12.5%;
+  }
+  .line-container .progress-line-active.length-2 {
+    height: 37.5%;
+  }
+  .line-container .progress-line-active.length-3 {
+    height: 62.5%;
+  }
+  .line-container .progress-line-active.length-4 {
+    height: 100%;
   }
   .line-container .status {
     left: -11px;
@@ -1077,7 +1087,7 @@ button {
     height: 400px;
     flex-wrap: wrap;
     align-items: center;
-    width: calc(100% - 80px);
+    width: calc(100% - 120px);
     font-size: 20px;
   }
   .progress__date-list .progress__date-item {
@@ -1821,7 +1831,7 @@ textarea:focus {
        object-fit: cover;
   }
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     display: none;
   }
   #prev {
